@@ -1,0 +1,48 @@
+$class: 'color';
+$activItemClass: 'aitem-color';
+$hoverItemClass: 'hitem-color';
+$hoverClass:'h-color';
+$activeClass:'a-color';
+
+@include generateResponsiveAtomic() {
+
+  @each $key,
+  $value in $baseColors {
+    &-#{$key} {
+      color: $value;
+    }
+  }
+  @each $key,
+  $value in $baseBgColors {
+    &-bg-#{$key} {
+      background-color: $value;
+    }
+  }
+}
+
+// Rgba colors 
+@include generateResponsiveAtomic() {
+// @include generateResponsiveAtomic()
+
+  @each $key,
+  $value in $baseShadowOpacity {
+
+    @each $color,
+    $hex in $baseRgbaColors {
+      &-rgba-#{$color} {
+        &-#{$key} {
+          color: rgba($hex, $value);
+        }
+      }
+    }
+
+    @each $color,
+    $hex in $baseRgbaBgColors {
+      &-rgba-bg-#{$color} {
+        &-#{$key} {
+          background-color: rgba($hex, $value);
+        }
+      }
+    }
+  }
+}

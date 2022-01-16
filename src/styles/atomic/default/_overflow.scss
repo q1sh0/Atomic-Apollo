@@ -1,0 +1,34 @@
+//global overflow
+$class: 'overflow';
+$activItemClass: null;
+$hoverItemClass: null;
+$activeClass: null;
+$hoverClass: null;
+// $activItemClass: 'aitem-overflow';
+// $hoverItemClass: 'hitem-overflow';
+// $activeClass:'a-overflow';
+// $hoverClass:'h-overflow';
+
+@include generateResponsiveAtomic() {
+
+    @each $key,
+    $value in $Overflow {
+        &-#{$key} {
+            overflow: $value;
+        }
+    }
+
+    @each $key,
+    $value in $OverflowY {
+        &-#{$key} {
+            overflow-y: $value;
+        }
+    }
+
+    @each $key,
+    $value in $OverflowX {
+        &-#{$key} {
+            overflow-x: $value;
+        }
+    }
+}

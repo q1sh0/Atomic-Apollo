@@ -1,0 +1,24 @@
+$class: 'scroll';
+$activItemClass: 'aitem-scroll';
+$hoverItemClass: 'hitem-scroll';
+$activeClass:'a-scroll';
+$hoverClass:'h-scroll';
+
+@include generateResponsiveAtomic() {
+
+  @each $key,
+  $value in $ScrolledDisplay {
+    &-#{$key} {
+      display: $value;
+    }
+  }
+
+  @each $key,
+  $value in $ScrolledFlexAlign {
+    &-#{$key} {
+      align-items: $value;
+    }
+  }
+}
+
+

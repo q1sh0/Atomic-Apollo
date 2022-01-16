@@ -1,0 +1,22 @@
+$class: 'z';
+$activItemClass: 'aitem-z';
+$hoverItemClass: 'hitem-z';
+$activeClass:'a-z';
+$hoverClass:'h-z';
+
+@include generateResponsiveAtomic() {
+
+    @each $key,
+    $value in $baseZindexList {
+        &-#{$key} {
+            z-index: $value;
+        }
+    }
+
+    @each $key,
+    $value in $baseZindexList {
+        &-minus-#{$key} {
+            z-index: unquote('-'+ $value);
+        }
+    }
+}

@@ -1,0 +1,20 @@
+//global pointer
+$class: 'pointer';
+$activItemClass: null;
+$hoverItemClass: null;
+$activeClass: null;
+$hoverClass: null;
+// $activItemClass: 'aitem-pointer';
+// $hoverItemClass: 'hitem-pointer';
+// $activeClass:'a-pointer';
+// $hoverClass:'h-pointer';
+
+@include generateResponsiveAtomic() {
+
+    @each $key,
+    $value in $PointerEvents {
+        &-#{$key} {
+            pointer-events: $value;
+        }
+    }
+}

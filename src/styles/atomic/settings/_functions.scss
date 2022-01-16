@@ -1,0 +1,51 @@
+@function map-set($map, $key, $value) {
+  $new: ($key: $value);
+  @return map-merge($map, $new);
+}
+
+//getPercent
+@function getPercent($key) {
+  @return map_get($baseSizePercent, $key);
+}
+
+//getUnit
+@function getUnit($key) {
+  @return map_get($baseUnits, $key);
+}
+
+//getPx
+@function getPx($key) {
+  @return map_get($baseSizePx, $key);
+}
+
+//getVh
+@function getVh($key) {
+  @return map_get($baseSizeVh, $key);
+}
+
+//getVw
+@function getVw($key) {
+  @return map_get($baseSizeVw, $key);
+}
+//getEm
+// @function getEm($key) {
+//   @return map_get($baseSizeEm, $key);
+// }
+//getRem
+// @function getRem($key) {
+//   @return map_get($baseSizeRem, $key);
+// }
+
+//getNumber
+@function getNumber($key) {
+  @return map_get($baseSizeNumbers, $key);
+}
+
+@function getZindex($key) {
+  @return map_get($base-z-index-list, $key);
+}
+
+//getColor
+@function getColor($key) {
+  @return map_get($baseColors, $key);
+}

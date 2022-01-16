@@ -1,0 +1,82 @@
+/*---------- base units ----------*/
+$baseUnit: $baseUnitVar;
+$baseUnits : ();
+
+@for $i from 0 through 25 {
+  $baseUnits: map-set($baseUnits, unquote('baseUnit-'+ $i), $i*$baseUnit);
+}
+
+/*---------- base numbers ----------*/
+$baseSizeNumbers : ();
+
+@for $i from 0 through 9 {
+  $baseSizeNumbers: map-set($baseSizeNumbers, unquote('numberSize--0--'+ $i), ($i/10));
+}
+
+@for $i from 0 through $maxNumber {
+  $baseSizeNumbers: map-set($baseSizeNumbers, unquote('numberSize--'+ $i), $i);
+}
+
+/*---------- $baseSizePercent ----------*/
+$baseSizePercent : ();
+
+@for $i from 0 through 9 {
+  $baseSizePercent: map-set($baseSizePercent, unquote('baseSize--0--'+ $i), unquote(($i/10)+'%'));
+}
+
+@for $i from 0 through $max-percent {
+  $baseSizePercent: map-set($baseSizePercent, unquote('baseSize--'+ $i), unquote(($i*$baseUnit)+'%'));
+
+}
+
+/*---------- $baseSizeVh ----------*/
+$baseSizeVh : ();
+
+@for $i from 0 through $max-vh {
+  $baseSizeVh: map-set($baseSizeVh, unquote('vhSize-'+ $i), unquote(($i*$baseUnit)+'vh'));
+}
+
+/*---------- $baseSizeVw ----------*/
+$baseSizeVw : ();
+
+@for $i from 0 through $max-vw {
+  $baseSizeVw: map-set($baseSizeVw, unquote('vwSize-'+ $i), unquote(($i*$baseUnit)+'vw'));
+}
+
+/*---------- $baseSizeEm ----------*/
+// $baseSizeEm : ();
+
+// @for $i from 0 through $max-em {
+//   $baseSizeEm: map-set($baseSizeEm, unquote('emSize-'+ $i), unquote(($i*$baseUnit)+'em'));
+// }
+
+/*---------- $baseSizeVw ----------*/
+// $baseSizeRem : ();
+
+// @for $i from 0 through $max-rem {
+//   $baseSizeRem: map-set($baseSizeRem, unquote('remSize-'+ $i), unquote(($i*$baseUnit)+'rem'));
+// }
+
+/*---------- $baseSizePx ----------*/
+$baseSizePx : ();
+
+@for $i from 0 through $max-px {
+  $baseSizePx: map-set($baseSizePx, unquote('pxSize-'+ $i), unquote(($i*$baseUnit)+'px'));
+  ;
+}
+
+/*---------- $base-fonts ----------*/
+$fontCode:'Source Code Pro',
+monospace;
+
+/*---------- $base-urls ----------*/
+
+//static 
+$urlstatic: 'url/';
+
+//static > atomic general directory
+$urlgeneral: 'atomic/';
+
+//static atomic icons
+$urlicons: 'icons';
+$urlpayments: 'payment-icons/';

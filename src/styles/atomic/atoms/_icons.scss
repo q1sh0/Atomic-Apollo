@@ -1,0 +1,40 @@
+$class: 'icon';
+$activItemClass: 'aitem-icon';
+$hoverItemClass: 'hitem-icon';
+$activeClass:'a-icon';
+$hoverClass:'h-icon';
+
+@include generateResponsiveAtomic() {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+
+  // default icon types
+  @each $key,
+  $value in $baseIcontFontSize {
+    font-size: $value;
+    color: $baseIcontColor;
+    min-height: map_get($baseIcontHeightWidthGrid, #{$key});
+    max-height: map_get($baseIcontHeightWidthGrid, #{$key});
+    min-width: map_get($baseIcontHeightWidthGrid, #{$key});
+    max-width: map_get($baseIcontHeightWidthGrid, #{$key});
+    background-color: map_get($baseIcontBgColor, #{$key});
+    margin: map_get($baseIcontMargin, #{$key});
+
+    //icon sizes
+    @each $key,
+    $value in $baseIconSize {
+      &-#{$key} {
+        font-size: $value;
+        min-width: map_get($baseIconGrid, #{$key});
+        max-width: map_get($baseIconGrid, #{$key});
+        min-height: map_get($baseIconGrid, #{$key});
+        max-height: map_get($baseIconGrid, #{$key});
+      }
+    }
+  }
+}

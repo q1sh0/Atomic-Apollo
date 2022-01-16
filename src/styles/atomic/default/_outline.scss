@@ -1,0 +1,20 @@
+//global outline
+$class: 'outline';
+$activItemClass: null;
+$hoverItemClass: null;
+$activeClass: null;
+$hoverClass: null;
+// $activItemClass: 'aitem-outline';
+// $hoverItemClass: 'hitem-outline';
+// $activeClass:'a-outline';
+// $hoverClass:'h-outline';
+
+@include generateResponsiveAtomic() {
+
+    @each $key,
+    $value in $Outline {
+        &-#{$key} {
+            outline: $value;
+        }
+    }
+}

@@ -1,0 +1,94 @@
+$class: 'label';
+$activItemClass: 'aitem-label';
+$hoverItemClass: 'hitem-label';
+$activeClass:'a-label';
+$hoverClass:'h-label';
+
+@include generateResponsiveAtomic() {
+  display: flex;
+  align-items: center;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+
+  // default label types
+  @each $key,
+  $value in $baseLabelFontSize {
+    font-size: $value;
+    font-feature-settings: map_get($baseLabelFeatureSetting, #{$key});
+    min-height: map_get($baseLabelHeightWidthGrid, #{$key});
+    line-height: map_get($baseLabelHeightWidthGrid, #{$key});
+    color: $baseLabelColor;
+    background-color: map_get($baseLabelBgColor, #{$key});
+    font-family: map_get($baseLabelFont, #{$key});
+    font-weight: map_get($baseLabelFonDefaultWeight, #{$key});
+  }
+
+  // labels types
+  @each $key,
+  $value in $baseLabelSizes {
+    &-#{$key} {
+      font-size: $value;
+      font-feature-settings: map_get($featureSetting, #{$key});
+      font-family: map_get($baseLabelFontFamily, #{$key});
+      min-height: map_get($baseLabelGrid, #{$key});
+      line-height: map_get($baseLabelGrid, #{$key});
+      font-weight: map_get($baseLabelFontWeight, #{$key});
+    }
+  }
+  // labels line height
+  @each $key,
+  $value in $lineHeight {
+    &-line-height-#{$key} {
+      line-height: $value;
+    }
+  }
+  @each $key,
+  $value in $FontAlign {
+    &-#{$key} {
+      text-align: $value;
+    }
+  }
+
+  @each $key,
+  $value in $FontDecoration {
+    &-#{$key} {
+      text-decoration: $value;
+    }
+  }
+
+  @each $key,
+  $value in $FontTrasform {
+    &-#{$key} {
+      text-transform: $value;
+    }
+  }
+
+  @each $key,
+  $value in $FontSetting {
+    &-#{$key} {
+      font-feature-settings: $value;
+    }
+  }
+  @each $key,
+  $value in $FontStyles {
+    &-#{$key} {
+      font-style: $value;
+    }
+  }
+
+  @each $key,
+  $value in $FontWeight {
+    &-#{$key} {
+      font-weight: $value;
+    }
+  }
+  @each $key,
+  $value in $FontOverflow {
+    &-#{$key} {
+      text-overflow: $value;
+    }
+  }
+}

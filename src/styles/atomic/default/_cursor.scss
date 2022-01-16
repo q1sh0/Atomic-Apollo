@@ -1,0 +1,20 @@
+//global cursor
+$class: 'cursor';
+$activItemClass: null;
+$hoverItemClass: null;
+$activeClass: null;
+$hoverClass: null;
+// $activItemClass: 'aitem-cursor';
+// $hoverItemClass: 'hitem-cursor';
+// $activeClass:'a-cursor';
+// $hoverClass:'h-cursor';
+
+@include generateResponsiveAtomic() {
+
+  @each $key,
+  $value in $Cursor {
+    &-#{$key} {
+      cursor: $value;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+$class: 'p';
+$activItemClass: 'aitem-p';
+$hoverItemClass: 'hitem-p';
+$activeClass:'a-p';
+$hoverClass:'h-p';
+
+@include generateResponsiveAtomic() {
+
+  @each $key,
+  $value in $baseSpacing {
+    &-#{$key} {
+      padding: $value;
+    }
+
+    &l-#{$key} {
+      padding-left: $value;
+    }
+
+    &t-#{$key} {
+      padding-top: $value;
+    }
+
+    &r-#{$key} {
+      padding-right: $value;
+    }
+
+    &b-#{$key} {
+      padding-bottom: $value;
+    }
+  }
+}

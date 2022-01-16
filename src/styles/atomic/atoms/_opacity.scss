@@ -1,0 +1,15 @@
+$class: 'opacity';
+$activItemClass: 'aitem-opacity';
+$hoverItemClass: 'hitem-opacity';
+$activeClass:'a-opacity';
+$hoverClass:'h-opacity';
+
+@include generateResponsiveAtomic() {
+
+  @each $key,
+  $value in $baseShadowOpacity {
+    &-#{$key} {
+      opacity: $value;
+    }
+  }
+}

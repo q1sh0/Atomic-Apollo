@@ -1,0 +1,123 @@
+$class: 'position';
+$activItemClass: 'aitem-position';
+$hoverItemClass: 'hitem-position';
+$activeClass:'a-position';
+$hoverClass:'h-position';
+
+@include generateResponsiveAtomic() {
+
+    @each $key,
+    $value in $Position {
+        &-#{$key} {
+            position: $value;
+        }
+    }
+
+    @each $key,
+    $value in $baseSizeTypes {
+        &-l {
+            &-#{$key} {
+                left: $value;
+            }
+        }
+
+        &-t {
+            &-#{$key} {
+                top: $value;
+            }
+        }
+
+        &-r {
+            &-#{$key} {
+                right: $value;
+            }
+        }
+
+        &-b {
+            &-#{$key} {
+                bottom: $value;
+            }
+        }
+
+        //minus position
+        &-minus {
+            &-l {
+                &-#{$key} {
+                    left: unquote('-'+ $value);
+                }
+            }
+
+            &-t {
+                &-#{$key} {
+                    top: unquote('-'+ $value);
+                }
+            }
+
+            &-r {
+                &-#{$key} {
+                    right: unquote('-'+ $value);
+                }
+            }
+
+            &-b {
+                &-#{$key} {
+                    bottom: unquote('-'+ $value);
+                }
+            }
+        }
+    }
+
+    @each $key,
+    $value in $BaseMinNumberSizes {
+        &-l {
+            &-#{$key} {
+                left: $value;
+            }
+        }
+
+        &-t {
+            &-#{$key} {
+                top: $value;
+            }
+        }
+
+        &-r {
+            &-#{$key} {
+                right: $value;
+            }
+        }
+
+        &-b {
+            &-#{$key} {
+                bottom: $value;
+            }
+        }
+
+        //minus position
+        &-minus {
+            &-l {
+                &-#{$key} {
+                    left: unquote('-'+ $value);
+                }
+            }
+
+            &-t {
+                &-#{$key} {
+                    top: unquote('-'+ $value);
+                }
+            }
+
+            &-r {
+                &-#{$key} {
+                    right: unquote('-'+ $value);
+                }
+            }
+
+            &-b {
+                &-#{$key} {
+                    bottom: unquote('-'+ $value);
+                }
+            }
+        }
+    }
+}

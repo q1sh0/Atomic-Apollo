@@ -1,0 +1,132 @@
+
+// root
+:root {
+  // ------------------ colors------------------ //
+    // colors
+    --primary-0: #000000;
+    --primary-3: #c91f20;
+    --primary-4: #191e23;
+    --primary-5: #1d2329;
+    --primary-6: #202830;
+    --primary-8: #a2a9b3;
+    --primary-7: #323b43;
+    --primary-9: #da8201;
+    --primary-10: #30325c;
+    --primary-11: #30233f;
+    --primary-12: #463e5c;
+    --primary-13: #7f7293;
+    --primary-14: #433430;
+    --primary-15: #61443a;
+    --primary-16: #68533c;
+    --primary-17: #60788D;
+    --primary-1: #ffffff;
+    --primary-2: #01AC2D;
+    --primary-transparent: transparent;
+    // rgba-colors
+    --rgba-0: 0, 0, 0;
+    --rgba-3: 201, 31, 32;
+    --rgba-4: 25, 30, 35;
+    --rgba-5: 29, 35, 41;
+    --rgba-6: 32, 40, 48;
+    --rgba-8: 162, 169, 179;
+    --rgba-7: 50, 59, 67;
+    --rgba-9: 218, 130, 1;
+    --rgba-10: 48, 50, 92;
+    --rgba-11: 48, 35, 63;
+    --rgba-12: 70, 62, 92;
+    --rgba-13: 127, 114, 147;
+    --rgba-14: 67, 52, 48;
+    --rgba-15: 97, 68, 58;
+    --rgba-16: 104, 83, 60;
+    --rgba-17: 96, 120, 141;
+    --rgba-1: 255, 255, 255;
+    --rgba-2: 1, 172, 45;
+    --rgba-transparent: 255, 255 ,255;
+    // border-colors
+    --b-0: #000000;
+    --b-3: #c91f20;
+    --b-4: #191e23;
+    --b-5: #1d2329;
+    --b-6: #202830;
+    --b-8: #a2a9b3;
+    --b-7: #323b43;
+    --b-9: #da8201;
+    --b-10: #30325c;
+    --b-11: #30233f;
+    --b-12: #463e5c;
+    --b-13: #7f7293;
+    --b-14: #433430;
+    --b-15: #61443a;
+    --b-16: #68533c;
+    --b-17: #60788D;
+    --b-1: #ffffff;
+    --b-2: #01AC2D;
+    --b-transparent: transparent;
+    // border-colors-positions
+    --b-position-0: #000000;
+    --b-position-3: #c91f20;
+    --b-position-4: #191e23;
+    --b-position-5: #1d2329;
+    --b-position-6: #202830;
+    --b-position-8: #a2a9b3;
+    --b-position-7: #323b43;
+    --b-position-9: #da8201;
+    --b-position-10: #30325c;
+    --b-position-11: #30233f;
+    --b-position-12: #463e5c;
+    --b-position-13: #7f7293;
+    --b-position-14: #433430;
+    --b-position-15: #61443a;
+    --b-position-16: #68533c;
+    --b-position-17: #60788D;
+    --b-position-1: #ffffff;
+    --b-position-2: #01AC2D;
+    --b-position-transparent: transparent;
+    // bg-colors
+    --bg-0: #000000;
+    --bg-3: #c91f20;
+    --bg-4: #191e23;
+    --bg-5: #1d2329;
+    --bg-6: #202830;
+    --bg-8: #a2a9b3;
+    --bg-7: #323b43;
+    --bg-9: #da8201;
+    --bg-10: #30325c;
+    --bg-11: #30233f;
+    --bg-12: #463e5c;
+    --bg-13: #7f7293;
+    --bg-14: #433430;
+    --bg-15: #61443a;
+    --bg-16: #68533c;
+    --bg-17: #60788D;
+    --bg-1: #ffffff;
+    --bg-2: #01AC2D;
+    --bg-transparent: transparent;
+      // scroll
+    --scroll-5: #1d2329;
+    --scroll-7: #323b43;
+    --scroll-3: #c91f20;
+
+    // input
+    --input-4: #191e23;
+    --input-transparent: transparent;
+    //btn
+    --btn-bg-7: #323b43;
+    --btn-bg-2: #01AC2D;
+    //   btn-border
+    --btn-border-7: #323b43;
+    --btn-border-2: #01AC2D;
+    // btn-label-color
+    --btn-label-color-1: #ffffff;
+    --btn-label-color-2: #ffffff;
+    // micro-icon
+    --icon-color-1: #ffffff;
+    // micro label
+    --label-color-1: #ffffff;
+    // ------------------ images------------------ //
+  --logo: url('https://newstatic.adjarabet.com/static/atomic/images/logos/logo.svg');
+  --logo-am: url('https://staticfiles.adjarabet.am/static.am/atomic/images/logos/logo_am.svg');
+  --logo-sm: url('https://newstatic.adjarabet.com/static/atomic/images/logos/logo-sm.svg');
+  --logo-am-sm: url('https://staticfiles.adjarabet.am/static.am/atomic/images/logos/logo-sm.svg');
+  --image-arena: url('https://newstatic.adjarabet.com/static/atomic/icons/arena-bg-new.svg');
+  }

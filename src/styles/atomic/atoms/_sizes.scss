@@ -1,0 +1,86 @@
+ $class: 'size';
+ $activItemClass: 'aitem-size';
+ $hoverItemClass: 'hitem-size';
+ $activeClass:'a-size';
+ $hoverClass:'h-size';
+
+ @include generateResponsiveAtomic() {
+
+     @each $key,
+     $value in $baseSizeTypes {
+         &-w {
+             &-#{$key} {
+                 width: $value;
+             }
+
+             &-min {
+                 &-#{$key} {
+                     min-width: $value;
+                 }
+             }
+
+             &-max {
+                 &-#{$key} {
+                     max-width: $value;
+                 }
+             }
+         }
+
+         &-h {
+             &-#{$key} {
+                 height: $value;
+             }
+
+             &-min {
+                 &-#{$key} {
+                     min-height: $value;
+                 }
+             }
+
+             &-max {
+                 &-#{$key} {
+                     max-height: $value;
+                 }
+             }
+         }
+     }
+    // auto+none+0
+         @each $key,
+         $value in $baseSizes {
+             &-w {
+                 &-#{$key} {
+                     width: $value;
+                 }
+
+                 &-min {
+                     &-#{$key} {
+                         min-width: $value;
+                     }
+                 }
+
+                 &-max {
+                     &-#{$key} {
+                         max-width: $value;
+                     }
+                 }
+             }
+
+             &-h {
+                 &-#{$key} {
+                     height: $value;
+                 }
+
+                 &-min {
+                     &-#{$key} {
+                         min-height: $value;
+                     }
+                 }
+
+                 &-max {
+                     &-#{$key} {
+                         max-height: $value;
+                     }
+                 }
+             }
+         }
+ }

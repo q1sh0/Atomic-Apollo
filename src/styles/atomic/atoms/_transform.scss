@@ -1,0 +1,170 @@
+$class: 'transform';
+$activItemClass: 'aitem-transform';
+$hoverItemClass: 'hitem-transform';
+$activeClass:'a-transform';
+$hoverClass:'h-transform';
+
+@include generateResponsiveAtomic() {
+
+    @each $key,
+    $value in $baseTransformRotate {
+        &-rotate {
+            &--#{$key} {
+                transform: rotate($value);
+            }
+
+            &-minus--#{$key} {
+                transform: rotate(unquote('-'+$value));
+            }
+        }
+    }
+
+    // //positions sizes
+    // @each $key,
+    // $value in $baseSizeTypes {
+    //     &-#{$key} {
+    //         transform: translate($value);
+    //     }
+
+    //     &-x-#{$key} {
+    //         transform: translateX($value);
+    //     }
+
+    //     &-y-#{$key} {
+    //         transform: translateY($value);
+    //     }
+
+    //     &-z-#{$key} {
+    //         transform: translateZ($value);
+    //     }
+
+    //     &-2 {
+    //         &-#{$key} {
+    //             transform: translate($value, $value);
+    //         }
+
+    //         &-x-#{$key} {
+    //             transform: translateX($value, $value);
+    //         }
+
+    //         &-y-#{$key} {
+    //             transform: translateY($value, $value);
+    //         }
+
+    //         &-z-#{$key} {
+    //             transform: translateZ($value, $value);
+    //         }
+    //     }
+
+    //     &-minus {
+
+    //         &-#{$key} {
+    //             transform: translate(unquote("-"+ $value));
+    //         }
+
+    //         &-x-#{$key} {
+    //             transform: translateX(unquote("-"+ $value));
+    //         }
+
+    //         &-y-#{$key} {
+    //             transform: translateY(unquote("-"+ $value));
+    //         }
+
+    //         &-z-#{$key} {
+    //             transform: translateZ(unquote("-"+ $value));
+    //         }
+
+    //         &-2 {
+    //             &-#{$key} {
+    //                 transform: translate(-$value, -$value);
+    //             }
+
+    //             &-x-#{$key} {
+    //                 transform: translateX(-$value, -$value);
+    //             }
+
+    //             &-y-#{$key} {
+    //                 transform: translateY(-$value, -$value);
+    //             }
+
+    //             &-z-#{$key} {
+    //                 transform: translateZ(-$value, -$value);
+    //             }
+    //         }
+    //     }
+    // }
+
+    // @each $key,
+    // $value in $BaseMinNumberSizes {
+    //     &-#{$key} {
+    //         transform: translate($value);
+    //     }
+
+    //     &-x-#{$key} {
+    //         transform: translateX($value);
+    //     }
+
+    //     &-y-#{$key} {
+    //         transform: translateY($value);
+    //     }
+
+    //     &-z-#{$key} {
+    //         transform: translateZ($value);
+    //     }
+
+    //     &-2 {
+    //         &-#{$key} {
+    //             transform: translate($value, $value);
+    //         }
+
+    //         &-x-#{$key} {
+    //             transform: translateX($value, $value);
+    //         }
+
+    //         &-y-#{$key} {
+    //             transform: translateY($value, $value);
+    //         }
+
+    //         &-z-#{$key} {
+    //             transform: translateZ($value, $value);
+    //         }
+    //     }
+
+    //     &-minus {
+
+    //         &-#{$key} {
+    //             transform: translate(unquote("-"+ $value));
+    //         }
+
+    //         &-x-#{$key} {
+    //             transform: translateX(unquote("-"+ $value));
+    //         }
+
+    //         &-y-#{$key} {
+    //             transform: translateY(unquote("-"+ $value));
+    //         }
+
+    //         &-z-#{$key} {
+    //             transform: translateZ(unquote("-"+ $value));
+    //         }
+
+    //         &-2 {
+    //             &-#{$key} {
+    //                 transform: translate(unquote("-"+ $value), (unquote("-"+ $value)));
+    //             }
+
+    //             &-x-#{$key} {
+    //                 transform: translateX(unquote("-"+ $value), (unquote("-"+ $value)));
+    //             }
+
+    //             &-y-#{$key} {
+    //                 transform: translateY(unquote("-"+ $value), (unquote("-"+ $value)));
+    //             }
+
+    //             &-z-#{$key} {
+    //                 transform: translateZ(unquote("-"+ $value), (unquote("-"+ $value)));
+    //             }
+    //         }
+    //     }
+    // }
+}

@@ -1,0 +1,62 @@
+//global flex
+$class: 'flex';
+$activItemClass: null;
+$hoverItemClass: null;
+$activeClass: null;
+$hoverClass: null;
+// $activItemClass: 'aitem-flex';
+// $hoverItemClass: 'hitem-flex';
+// $activeClass:'a-flex';
+// $hoverClass:'h-flex';
+
+@include generateResponsiveAtomic() {
+  display: flex;
+
+  @each $key,
+  $value in $FlexdDrection {
+    &-#{$key} {
+      flex-direction: $value;
+    }
+  }
+
+  @each $key,
+  $value in $FlexWrap {
+    &-#{$key} {
+      flex-wrap: $value;
+    }
+  }
+
+  @each $key,
+  $value in $FlexAlign {
+    &-#{$key} {
+      align-items: $value;
+    }
+  }
+
+  @each $key,
+  $value in $FlexAlignContent {
+    &-#{$key} {
+      align-content: $value;
+    }
+  }
+
+  @each $key,
+  $value in $FlexAlignSelf {
+    &-#{$key} {
+      align-self: $value;
+    }
+  }
+
+  @each $key,
+  $value in $FlexJustify {
+    &-#{$key} {
+      justify-content: $value;
+    }
+  }
+  @each $key,
+  $value in $FlexShrink {
+    &-#{$key} {
+      justify-content: $value;
+    }
+  }
+}

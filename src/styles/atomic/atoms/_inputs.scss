@@ -1,0 +1,80 @@
+$class: 'input';
+$activItemClass: 'aitem-input';
+$hoverItemClass: 'hitem-input';
+$activeClass:'a-input';
+$hoverClass:'h-input';
+
+@include generateResponsiveAtomic() {
+  outline: none;
+  white-space: nowrap;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+
+  // default input types
+  @each $key,
+  $value in $baeInputFontSizeDefault {
+    -webkit-appearance: none;
+    -appearance: none;
+    font-size: $value;
+    height: map_get($baseInputHeightDefault, #{$key});
+    border-radius: map_get($baseInputBorderRadiusDefault, #{$key});
+    color: map_get($baseInputColorDefault, #{$key});
+    background-color: map_get($BaseInputBgColorDefault, #{$key});
+    border: 1px map_get($baseInputBorderColor, #{$key});
+    font-family: map_get($baseInputFont, #{$key});
+    padding: map_get($baseInputPadding, #{$key});
+
+    // Input types
+    @each $key,
+    $value in $BaseInputTypes {
+      &-#{$key} {
+        background-color: map_get($BaseInputBgColor, #{$key});
+        border: $value;
+      }
+    }
+
+    // Input types 
+    @each $key,
+    $value in $baseInputFontSize {
+      &-#{$key} {
+        font-size: $value;
+        height: map_get($BaseInputSize, #{$key});
+      }
+    }
+
+    //transparent bordered 
+    @each $key,
+    $value in $BaseInputTypes {
+      &-bordered-#{$key} {
+        background-color: transparent;
+        border: $value;
+      }
+    }
+  }
+}
+
+// autofill
+input:-internal-autofill-selected {
+  background-color: rgb(232, 240, 254);
+  background-image: none;
+  color: -internal-light-dark-color(black, transparent);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  border: 1px solid #323b43;
+  -webkit-text-fill-color: #fff;
+  -webkit-box-shadow: 0 0 0 1000px rgb(29, 36, 41) inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

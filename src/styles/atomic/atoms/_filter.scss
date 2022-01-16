@@ -1,0 +1,22 @@
+$class: 'filter';
+$activItemClass: 'aitem-filter';
+$hoverItemClass: 'hitem-filter';
+$activeClass:'a-filter';
+$hoverClass:'h-filter';
+
+@include generateResponsiveAtomic() {
+
+  //icon sizes
+  @each $key,
+  $value in $filterGrayscale {
+    &-grayscale-#{$key} {
+      filter: unquote("grayscale(#{$value})");
+    }
+  }
+  @each $key,
+  $value in $fltrBlur {
+    &-blur-#{$key} {
+      filter: unquote("blur(#{$value})");
+    }
+  }
+}

@@ -1,0 +1,80 @@
+// ------------------ ewl data theme heeader------------------ //
+
+//  betfair header, micro:color color   
+._s_apollo-data-theme-header {
+  --primary-8: #191e23;
+  --primary-1: #191e23;
+  --rgba-5: 255, 255, 255;
+  --b-7: #ffffff;
+  --b-position-7: rgba(30, 30, 30, .05);
+  --b-position-6: rgba(30, 30, 30, .05);
+  --bg-3: #1e1e1e;
+  --bg-4: #ffffff;
+  --bg-5: #ffb80c;
+  --bg-7: #dd9c06;
+  --input-4: #ffffff;
+  --input-transparent: #ffffff;
+  --btn-bg-7: #1e1e1e;
+  --btn-bg-2: #c2c2c2;
+  --btn-border-7: #323b43;
+  --btn-border-2: #c2c2c2;
+  --btn-label-color-1: #ffffff;
+  --btn-label-color-2: #000000;
+  --logo: url('https://newstatic.adjarabet.com/static/atomic/images/logos/logo-black.svg');
+  --logo-am: url('https://newstatic.adjarabet.com/static/atomic/images/logos/logo-am-black.svg');
+  --logo-sm: url('https://newstatic.adjarabet.com/static/atomic/images/logos/mini-logo-black.svg');
+  
+
+  //  betfair header, micro:color child  notification 
+    ._s_apollo-data-theme-header--notif {
+        --label-color-1: #1e1e1e;
+        --bg-6: #F0F1F5;
+        --bg-7: #DCDCDC;
+        --primary-6:#F0F1F5;
+        --b-position-7: #DCDCDC;
+        --scroll-5: #F0F1F5;
+        --scroll-7: #DCDCDC;
+        --scroll-3: #DCDCDC;
+
+    }
+}
+// ------------------ ewl data theme footer------------------ //
+._s_apollo-data-theme-footer {
+  --primary-8: #191e23;
+  --primary-1: #191e23;
+  --b-7: rgb(50 59 67 / 20%);
+  --b-position-7: rgb(50 59 67 / 20%);
+  --b-position-6: rgba(30, 30, 30, .05);
+  --bg-6: #dcdcdc;
+  --bg-5: #c2c2c2;
+  --bg-2: #ffb80c;
+  --scroll-5: #dcdcdc;
+  --scroll-3: #c2c2c2;
+}
+// ------------------ ewl data theme mobile headeer------------------ //
+._s_apollo-data-theme-mobile-header {
+  // // fk (rgba) css var!!! 
+  // // background-color: rgba(var(--rgba-0), rgba(var(--opacity-7));
+  // ._s_color-rgba-bg-primary-0-0--7 {
+  //   background-color: #ffb80c;
+  // }
+  --icon-color-1: #1e1e1e;
+  --label-color-1: #1e1e1e;
+  --bg-4: #ffb80c;
+}
+
+// ------------------ ewl data theme mobile footer------------------ //
+._s_apollo-data-theme-mobile-footer {
+  --primary-8: #191e23;
+  --primary-1: #191e23;
+  --b-7: rgb(50 59 67 / 20%);
+  --bg-6: #202830;
+  --bg-5: #dcdcdc;
+  --bg-2: #ffb80c;
+  --bg-7: #c2c2c2;
+  --btn-bg-7: #c2c2c2;
+  --btn-border-7: #c2c2c2;
+  --btn-bg-transparent: transparent;
+  --btn-label-color-1: #000000;
+  --btn-label-color-2: #000000;
+}

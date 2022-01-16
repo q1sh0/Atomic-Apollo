@@ -1,0 +1,37 @@
+$class: 'm';
+
+// $activItemClass: null;
+// $hoverItemClass: null;
+// $activeClass: null;
+// $hoverClass: null;
+
+$activItemClass: 'aitem-m';
+$hoverItemClass: 'hitem-m';
+$activeClass:'a-m';
+$hoverClass:'h-m';
+
+@include generateResponsiveAtomic() {
+
+    @each $key,
+    $value in $baseSpacing {
+        &-#{$key} {
+            margin: $value;
+        }
+
+        &l-#{$key} {
+            margin-left: $value;
+        }
+
+        &t-#{$key} {
+            margin-top: $value;
+        }
+
+        &r-#{$key} {
+            margin-right: $value;
+        }
+
+        &b-#{$key} {
+            margin-bottom: $value;
+        }
+    }
+}

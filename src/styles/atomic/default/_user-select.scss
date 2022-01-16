@@ -1,0 +1,20 @@
+//global user
+$class: 'user';
+$activItemClass: null;
+$hoverItemClass: null;
+$activeClass: null;
+$hoverClass: null;
+
+// $activItemClass: 'aitem-user';
+// $hoverItemClass: 'hitem-user';
+// $activeClass:'a-user';
+// $hoverClass:'h-user';
+@include generateResponsiveAtomic() {
+
+    @each $key,
+    $value in $userSelect {
+        &-#{$key} {
+            user-select: $value;
+        }
+    }
+}

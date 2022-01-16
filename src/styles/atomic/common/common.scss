@@ -1,0 +1,367 @@
+@import '_apollo-default.scss';
+@import '_grid';
+@import '_icons';
+@import '_common-jackpots';
+@import '_atomic-cssvar';
+@import '_apollo-themes';
+// comm
+._s_flex-a-start-i {
+  align-items: flex-start !important;
+}
+._s_white-space-normal {
+    white-space: normal !important;
+}
+// sizes
+._s_size-w-vw--25 {
+    width: 100vw;
+}
+._s_size-h-px-zero--2 {
+    height: 2px;
+}
+._s_size-w-px-zero--2 {
+    width: 2px;
+}
+._s_a-p._s_aitem-pl-1 {
+    padding-left: 4px;
+}
+// spacing
+._s_a-p._s_aitem-pt-1 {
+    padding-top: 4px;
+}
+._s_a-p._s_aitem-pr-1 {
+    padding-right: 4px;
+}
+._s_a-p._s_aitem-pb-1 {
+    padding-bottom: 4px;
+}
+._s_a-p._s_aitem-pl-5 {
+    padding-left: 20px;
+}
+// opacity
+._s_a-opacity._s_aitem-opacity-1 {
+    opacity: 1;
+}
+// spacing
+._s_a-p._s_aitem-pt-none {
+    padding-top: 0px;
+}
+// disabled  typo  dasamatebelia
+._s_d-color ._s_ditem-color-primary-4 {
+    color: #191e23;
+}
+._s_d-cursor ._s_ditem-cursor-default {
+    cursor: default;
+}
+/* Desktop Last slot winner animation shalva chaildebi dasamatebeli gvaq taipebis mixedvit*/
+._s_slot-winner:first-child {
+    height: 0px;
+    margin-top: 0;
+    padding-bottom: 0;
+    overflow: hidden;
+}
+._s_height ._s_slot-winner:first-child {
+    height: 200px;
+    margin-top: 20px;
+    padding-bottom: 4px;
+}
+/* Desktop Last slot winner animation end */
+._s_adj-crown:before {content: "\e969";}
+._s_adj-recently:before {content: "\e91d";}
+._s_adj-announcement:before {content: "\e94e";}
+._s_adj-recommended:before {content: "\e91b";}
+._s_adj-trending:before {content: "\e96c";}
+._s_adj-sports:before, ._s_adj-sport:before {content: "\e952";}
+/* EWL Styles - TODO gadasatania (Marto Exchange s routze rom chaitvirtos) */
+._s_mt-body {
+  margin-top: 104px;
+}
+  //for payment
+  .withdrawal-instruction__description table {
+    width: auto !important;
+  }
+
+
+  // builded classNames need pars side fix !
+
+._s_btn:hover {
+  border-color: rgba(var(--rgba-3), 0.7);
+  background-color: rgba(var(--rgba-3), 0.7);
+}
+._s_btn:focus {
+  border-color: rgba(var(--rgba-3), 0.7);
+  background-color: rgba(var(--rgba-3), 0.5);
+}
+
+._s_btn-positive:hover {
+  border-color: rgba(var(--rgba-2), 0.7);
+  background-color: rgba(var(--rgba-2), 0.7);
+}
+._s_btn-positive:focus {
+  border-color: var(--b-2);
+  background-color: rgba(var(--rgba-2), 0.5);
+}
+._s_btn-positive:hover ._s_label {
+  color: var(--primary-1);
+}
+._s_btn-positive:focus ._s_label {
+  color: var(--primary-1);
+}
+._s_btn-positive:hover ._s_icon {
+  color: var(--bg-1);
+}
+._s_btn-positive:focus ._s_icon {
+  color: var(--primary-1);
+}
+._s_btn-negative:hover {
+  border-color: rgba(var(--rgba-7), 0.7);
+  background-color: rgba(var(--rgba-7), 0.7);
+}
+._s_btn-negative:focus {
+  border-color: var(--b-7);
+  background-color: rgba(var(--rgba-7), 0.5);
+}
+._s_btn-negative:hover ._s_label {
+  color: var(--primary-1);
+}
+._s_btn-negative:focus ._s_label {
+  color: var(--primary-1);
+}
+._s_btn-negative:hover ._s_icon {
+  color: var(--bg-1);
+}
+._s_btn-negative:focus ._s_icon {
+  color: var(--primary-1);
+}
+._s_btn-default:hover {
+  border-color: rgba(var(--rgba-3), 0.7);
+  background-color: rgba(var(--rgba-3), 0.7);
+}
+._s_btn-default:focus {
+  border-color: var(--b-3);
+  background-color: rgba(var(--rgba-3), 0.5);
+}
+._s_btn-default:hover ._s_label {
+  color: var(--primary-1);
+}
+._s_btn-default:focus ._s_label {
+  color: var(--primary-1);
+}
+._s_btn-default:hover ._s_icon {
+  color: var(--bg-1);
+}
+._s_btn-default:focus ._s_icon {
+  color: var(--primary-1);
+}
+._s_btn-transparent:hover {
+  border-color: var(--primary-transparent);
+  background-color: var(--primary-transparent);
+}
+._s_btn-transparent:focus {
+  border-color: rgba(var(--rgba-8), 0.7);
+  background-color: var(--primary-transparent);
+}
+._s_btn-transparent:hover ._s_label {
+  color: var(--primary-1);
+}
+._s_btn-transparent:focus ._s_label {
+  color: var(--primary-1);
+}
+._s_btn-transparent:hover ._s_icon {
+  color: var(--primary-1);
+}
+._s_btn-transparent:focus ._s_icon {
+  color: var(--primary-1);
+}
+
+._s_btn-bordered-negative:hover {
+  border-color: rgba(var(--rgba-7), 0.5);
+  background-color: var(--primary-transparent);
+}
+._s_btn-bordered-negative:focus {
+  border-color: rgba(var(--rgba-7), 0.7);
+  background-color: var(--primary-transparent);
+}
+._s_btn-bordered-negative:focus ._s_label {
+  color: var(--primary-1);
+}
+._s_btn-bordered-negative:hover ._s_icon {
+  color: var(--primary-1);
+}
+._s_btn-bordered-negative:focus ._s_icon {
+  color: var(--primary-1);
+}
+._s_btn-bordered-negative ._s_label {
+  color: var(--primary-1);
+}
+._s_btn-bordered-negative ._s_icon {
+  color: var(--primary-1);
+}
+._s_btn-disabled-positive:hover {
+  cursor: default !important;
+  border-color: rgba(var(--rgba-2), 0.5);
+  background-color: rgba(var(--rgba-2), 0.5);
+}
+._s_btn-disabled-positive:hover ._s_label {
+  color: rgba(var(--rgba-1), 0.5);
+}
+._s_btn-disabled-positive:hover ._s_icon {
+  color: var(--primary-1);
+}
+._s_btn-disabled-positive:focus {
+  cursor: default !important;
+  border-color: rgba(var(--rgba-2), 0.5);
+  background-color: rgba(var(--rgba-2), 0.5);
+}
+._s_btn-disabled-positive:focus ._s_label {
+  color: rgba(var(--rgba-1), 0.5);
+}
+._s_btn-disabled-positive:focus ._s_icon {
+  color: var(--primary-1);
+}
+._s_btn-disabled-negative:hover {
+  cursor: default !important;
+  border-color: rgba(var(--rgba-7), 0.5);
+  background-color: rgba(var(--rgba-7), 0.5);
+}
+._s_btn-disabled-negative:hover ._s_label {
+  color: rgba(var(--rgba-1), 0.5);
+}
+._s_btn-disabled-negative:hover ._s_icon {
+  color: var(--primary-1);
+}
+._s_btn-disabled-negative:focus {
+  cursor: default !important;
+  border-color: rgba(var(--rgba-7), 0.5);
+  background-color: rgba(var(--rgba-7), 0.5);
+}
+._s_btn-disabled-negative:focus ._s_label {
+  color: rgba(var(--rgba-1), 0.5);
+}
+._s_btn-disabled-negative:focus ._s_icon {
+  color: var(--primary-1);
+}
+._s_btn-disabled-default:hover {
+  cursor: default !important;
+  border-color: rgba(var(--rgba-3), 0.5);
+  background-color: rgba(var(--rgba-3), 0.5);
+}
+._s_btn-disabled-default:hover ._s_label {
+  color: rgba(var(--rgba-1), 0.5);
+}
+._s_btn-disabled-default:hover ._s_icon {
+  color: var(--primary-1);
+}
+._s_btn-disabled-default:focus {
+  cursor: default !important;
+  border-color: rgba(var(--rgba-3), 0.5);
+  background-color: rgba(var(--rgba-3), 0.5);
+}
+._s_btn-disabled-default:focus ._s_label {
+  color: rgba(var(--rgba-1), 0.5);
+}
+._s_btn-disabled-default:focus ._s_icon {
+  color: var(--primary-1);
+}
+._s_btn-disabled-transparent:hover {
+  cursor: default !important;
+  border-color: var(--primary-transparent);
+  background-color: var(--primary-transparent);
+}
+._s_btn-disabled-transparent:hover ._s_label {
+  color: rgba(var(--rgba-1), 0.5);
+}
+._s_btn-disabled-transparent:hover ._s_icon {
+  color: var(--primary-1);
+}
+._s_btn-disabled-transparent:focus {
+  cursor: default !important;
+  border-color: var(--primary-transparent);
+  background-color: var(--primary-transparent);
+}
+._s_btn-disabled-transparent:focus ._s_label {
+  color: rgba(var(--rgba-1), 0.5);
+}
+._s_btn-disabled-transparent:focus ._s_icon {
+  color: var(--primary-1);
+}
+._s_btn-disabled-bordered-negative:hover {
+  cursor: default !important;
+  border-color: rgba(var(--rgba-7), 0.5);
+  background-color: var(--primary-transparent);
+}
+._s_btn-disabled-bordered-negative:hover ._s_label {
+  color: rgba(var(--rgba-1), 0.5);
+}
+._s_btn-disabled-bordered-negative:hover ._s_icon {
+  color: var(--primary-1);
+}
+._s_btn-disabled-bordered-negative:focus {
+  cursor: default !important;
+  border-color: rgba(var(--rgba-7), 0.5);
+  background-color: var(--primary-transparent);
+}
+._s_btn-disabled-bordered-negative:focus ._s_label {
+  color: rgba(var(--rgba-1), 0.5);
+}
+._s_btn-disabled-bordered-negative:focus ._s_icon {
+  color: var(--primary-1);
+}
+
+._s_overflow-auto,._s_overflow-y-auto,._s_overflow-x-auto,._s_overflow-x-scroll {
+  -webkit-overflow-scrolling: touch;
+}
+
+._s_check-radio-disabled ._s_adj-check {
+    color: #1d2329;
+}
+
+._s_body_overflow {
+  overflow: hidden;
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-overflow-scrolling: none;
+  -webkit-overflow-scrolling: hidden;
+}
+
+// Slider bullets
+
+._s_position-l-percent--50 {
+  left: 50%;
+}
+
+._s_transform-translateX-minus-percent--50 {
+  transform: translateX(-50%);
+}
+
+// Popup fadeUp
+
+._s_animation-translateY--100 {
+  animation-name: moveUp;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes moveUp {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+//
+
+._s_scroll-x-md::-webkit-scrollbar {
+  height: 8px
+}
+._s_scroll-x-sm::-webkit-scrollbar {
+  height: 4px
+}

@@ -1,0 +1,649 @@
+//solors
+$baseColors: (
+  "primary-0": var(--primary-0),
+  "primary-3": var(--primary-3),
+  "primary-4": var(--primary-4),
+  "primary-5": var(--primary-5),
+  "primary-6": var(--primary-6),
+  "primary-8": var(--primary-8),
+  "primary-7": var(--primary-7),
+  "primary-9": var(--primary-9),
+  "primary-10": var(--primary-10),
+  "primary-11": var(--primary-11),
+  "primary-12": var(--primary-12),
+  "primary-13": var(--primary-13),
+  "primary-14": var(--primary-14),
+  "primary-15": var(--primary-15),
+  "primary-16": var(--primary-16),
+  "primary-17": var(--primary-17),
+  "primary-1": var(--primary-1),
+  "primary-2": var(--primary-2),
+  "transparent": transparent,
+);
+
+$baseRgbaColors: (
+  "primary-0": var(--rgba-0),
+  "primary-3": var(--rgba-3),
+  "primary-4": var(--rgba-4),
+  "primary-5": var(--rgba-5),
+  "primary-6": var(--rgba-6),
+  "primary-8": var(--rgba-8),
+  "primary-7": var(--rgba-7),
+  "primary-9": var(--rgba-9),
+  "primary-10": var(--rgba-10),
+  "primary-11": var(--rgba-11),
+  "primary-12": var(--rgba-12),
+  "primary-13": var(--rgba-13),
+  "primary-14": var(--rgba-14),
+  "primary-15": var(--rgba-15),
+  "primary-16": var(--rgba-16),
+  "primary-17": var(--rgba-17),
+  "primary-1": var(--rgba-1),
+  "primary-2": var(--rgba-2),
+  "transparent": transparent,
+);
+$baseRgbaBgColors: (
+  "primary-0": var(--rgba-0),
+  "primary-3": var(--rgba-3),
+  "primary-4": var(--rgba-4),
+  "primary-5": var(--rgba-5),
+  "primary-6": var(--rgba-6),
+  "primary-8": var(--rgba-8),
+  "primary-7": var(--rgba-7),
+  "primary-9": var(--rgba-9),
+  "primary-10": var(--rgba-10),
+  "primary-11": var(--rgba-11),
+  "primary-12": var(--rgba-12),
+  "primary-13": var(--rgba-13),
+  "primary-14": var(--rgba-14),
+  "primary-15": var(--rgba-15),
+  "primary-16": var(--rgba-16),
+  "primary-17": var(--rgba-17),
+  "primary-1": var(--rgba-1),
+  "primary-2": var(--rgba-2),
+  "transparent": var(--rgba-transparent),
+);
+// bg colors
+$baseBgColors: (
+  "primary-0": var(--bg-0),
+  "primary-3": var(--bg-3),
+  "primary-4": var(--bg-4),
+  "primary-5": var(--bg-5),
+  "primary-6": var(--bg-6),
+  "primary-8": var(--bg-8),
+  "primary-7": var(--bg-7),
+  "primary-9": var(--bg-9),
+  "primary-10": var(--bg-10),
+  "primary-11": var(--bg-11),
+  "primary-12": var(--bg-12),
+  "primary-13": var(--bg-13),
+  "primary-14": var(--bg-14),
+  "primary-15": var(--bg-15),
+  "primary-16": var(--bg-16),
+  "primary-17": var(--bg-17),
+  "primary-1": var(--bg-1),
+  "primary-2": var(--bg-2),
+  "transparent": var(--primary-transparent),
+);
+// border colors
+$baseBorderColors: (
+  "primary-0": var(--b-0),
+  "primary-3": var(--b-3),
+  "primary-4": var(--b-4),
+  "primary-5": var(--b-5),
+  "primary-6": var(--b-6),
+  "primary-8": var(--b-8),
+  "primary-7": var(--b-7),
+  "primary-9": var(--b-9),
+  "primary-10": var(--b-10),
+  "primary-11": var(--b-11),
+  "primary-12": var(--b-12),
+  "primary-13": var(--b-13),
+  "primary-14": var(--b-14),
+  "primary-15": var(--b-15),
+  "primary-16": var(--b-16),
+  "primary-17": var(--b-17),
+  "primary-1": var(--b-1),
+  "primary-2": var(--b-2),
+  "transparent": transparent,
+);
+$baseBorderColorPosition: (
+  "primary-0": var(--b-position-0),
+  "primary-3": var(--b-position-3),
+  "primary-4": var(--b-position-4),
+  "primary-5": var(--b-position-5),
+  "primary-6": var(--b-position-6),
+  "primary-8": var(--b-position-8),
+  "primary-7": var(--b-position-7),
+  "primary-9": var(--b-position-9),
+  "primary-10": var(--b-position-10),
+  "primary-11": var(--b-position-11),
+  "primary-12": var(--b-position-12),
+  "primary-13": var(--b-position-13),
+  "primary-14": var(--b-position-14),
+  "primary-15": var(--b-position-15),
+  "primary-16": var(--b-position-16),
+  "primary-17": var(--b-position-17),
+  "primary-1": var(--b-position-1),
+  "primary-2": var(--b-position-2),
+  "transparent": transparent,
+);
+// $baseBgImages
+
+$baseBgImages: (
+  "img-logo": var(--logo),
+  "img-logo-am": var(--logo-am),
+  "img-logoSm": var(--logo-sm),
+  "img-logoSm-am": var(--logo-am-sm),
+  "img-arena": var(--image-arena),
+);
+/*===============Shadow Sizes===============*/
+$baseShadowSize: (
+  "lg": 2px 3px 5px,
+  "md": 2px 5px 5px,
+  "sm": 2px 7px 5px,
+  "xs": 2px 3px 5px,
+);
+/*===============Opacity===============*/
+$baseShadowOpacity: (
+  "0": unquote(getNumber("numberSize--0")),
+  "0--1": unquote(getNumber("numberSize--0--1")),
+  "0--2": unquote(getNumber("numberSize--0--2")),
+  "0--3": unquote(getNumber("numberSize--0--3")),
+  "0--4": unquote(getNumber("numberSize--0--4")),
+  "0--5": unquote(getNumber("numberSize--0--5")),
+  "0--6": unquote(getNumber("numberSize--0--6")),
+  "0--7": unquote(getNumber("numberSize--0--7")),
+  "0--8": unquote(getNumber("numberSize--0--8")),
+  "0--9": unquote(getNumber("numberSize--0--9")),
+  "1": unquote(getNumber("numberSize--1")),
+);
+/*===============Transition===============*/
+$baseTransition: (
+  "0": unquote(getNumber("numberSize--0") + "s all"),
+  "0--1": unquote(getNumber("numberSize--0--1") + "s all"),
+  "0--2": unquote(getNumber("numberSize--0--2") + "s all"),
+  "0--3": unquote(getNumber("numberSize--0--3") + "s all"),
+  "0--4": unquote(getNumber("numberSize--0--4") + "s all"),
+  "0--5": unquote(getNumber("numberSize--0--5") + "s all"),
+  "0--6": unquote(getNumber("numberSize--0--6") + "s all"),
+  "0--7": unquote(getNumber("numberSize--0--7") + "s all"),
+  "0--8": unquote(getNumber("numberSize--0--8") + "s all"),
+  "0--9": unquote(getNumber("numberSize--0--9") + "s all"),
+  "1": unquote(getNumber("numberSize--1") + "s all"),
+  "2": unquote(getNumber("numberSize--2") + "s all"),
+  "3": unquote(getNumber("numberSize--3") + "s all"),
+);
+
+/*===============Container===============*/
+$Container: (
+  sm: 991px,
+  xs: 768px,
+);
+$defaultContainer: 1440px;
+/*===============TrannsformRotate===============*/
+$baseTransformRotate: (
+  "360": unquote(getNumber("numberSize--360") + "deg"),
+  "180": unquote(getNumber("numberSize--180") + "deg"),
+  "90": unquote(getNumber("numberSize--90") + "deg"),
+  "45": unquote(getNumber("numberSize--45") + "deg"),
+);
+/*===============Spacings===============*/
+$baseSpacing: (
+  "10": unquote(getUnit("baseUnit-10") + "px"),
+  "9": unquote(getUnit("baseUnit-9") + "px"),
+  "8": unquote(getUnit("baseUnit-8") + "px"),
+  "7": unquote(getUnit("baseUnit-7") + "px"),
+  "6": unquote(getUnit("baseUnit-6") + "px"),
+  "5": unquote(getUnit("baseUnit-5") + "px"),
+  "4": unquote(getUnit("baseUnit-4") + "px"),
+  "3": unquote(getUnit("baseUnit-3") + "px"),
+  "2-5": unquote(getNumber("numberSize--10") + "px"),
+  "2": unquote(getUnit("baseUnit-2") + "px"),
+  "1": unquote(getUnit("baseUnit-1") + "px"),
+  "none": 0,
+  "auto": auto,
+);
+// base sizes
+$baseSizes: (
+  "0": 0,
+  "zero-px-0": 0px,
+  "zero-px-1": 1px,
+  "zero-px-2": 2px,
+  "zero-px-3": 3px,
+  "zero-percent-0": 0%,
+  "zero-percent-1": 1%,
+  "zero-percent-2": 2%,
+  "zero-percent-3": 3%,
+  "none": none,
+  "auto": auto,
+);
+/*===============Border ===============*/
+$baseBorderRadius: (
+  "full": unquote(getNumber("numberSize--100") + "%"),
+  "xxl": unquote(getUnit("baseUnit-8") + "px"),
+  "xl": unquote(getUnit("baseUnit-6") + "px"),
+  "lg": unquote(getUnit("baseUnit-3") + "px"),
+  "md": unquote(getUnit("baseUnit-2") + "px"),
+  "sm": unquote(getUnit("baseUnit-1") + "px"),
+  "none": 0,
+);
+$baseBorderLenght: (
+  "2": unquote(getNumber("numberSize--2") + "px"),
+  "1": unquote(getNumber("numberSize--1") + "px"),
+  "none": 0,
+);
+$baseBorderTypes: (
+  "solid": solid,
+  "dotted": dotted,
+  "double": double,
+);
+$defaultBorderLenght: (
+  "borderLenght": unquote(getNumber("numberSize--1") + "px"),
+);
+/*===============Button Types===============*/
+$BaseButtonTypes: (
+  "positive": unquote(getNumber("numberSize--1") + "px") solid var(--bg-2),
+  "negative": unquote(getNumber("numberSize--1") + "px") solid var(--bg-7),
+  "default": unquote(getNumber("numberSize--1") + "px") solid var(--bg-3),
+  "transparent": unquote(getNumber("numberSize--1") + "px") solid
+    var(--primary-transparent),
+  "bordered-negative": unquote(getNumber("numberSize--1") + "px") solid
+    var(--b-7),
+);
+$BaseButtonBgColor: (
+  "positive": var(--bg-2),
+  "negative": var(--bg-7),
+  "default": var(--bg-3),
+  "transparent": var(--primary-transparent),
+  "bordered-negative": var(--primary-transparent),
+);
+$BaseButtonBgHoverColor: (
+  "positive": rgba(var(--rgba-2), unquote(getNumber("numberSize--0--7") + "")),
+  "negative": rgba(var(--rgba-7), unquote(getNumber("numberSize--0--7") + "")),
+  "default": rgba(var(--rgba-3), unquote(getNumber("numberSize--0--7") + "")),
+  "transparent": var(--primary-transparent),
+  "bordered-negative": var(--primary-transparent),
+);
+$BaseButtonBorderHoverColor: (
+  "positive": rgba(var(--rgba-2), unquote(getNumber("numberSize--0--7") + "")),
+  "negative": rgba(var(--rgba-7), unquote(getNumber("numberSize--0--7") + "")),
+  "default": rgba(var(--rgba-3), unquote(getNumber("numberSize--0--7") + "")),
+  "transparent": var(--primary-transparent),
+  "bordered-negative":
+    rgba(var(--rgba-7), unquote(getNumber("numberSize--0--5") + "")),
+);
+$BaseButtonBgFocusColor: (
+  "positive": rgba(var(--rgba-2), unquote(getNumber("numberSize--0--5") + "")),
+  "negative": rgba(var(--rgba-7), unquote(getNumber("numberSize--0--5") + "")),
+  "default": rgba(var(--rgba-3), unquote(getNumber("numberSize--0--5") + "")),
+  "transparent": var(--primary-transparent),
+  "bordered-negative": var(--primary-transparent),
+);
+$BaseButtonBorderFocusColor: (
+  "positive": var(--b-2),
+  "negative": var(--b-7),
+  "default": var(--b-3),
+  "transparent":
+    rgba(var(--rgba-8), unquote(getNumber("numberSize--0--7") + "")),
+  "bordered-negative":
+    rgba(var(--rgba-7), unquote(getNumber("numberSize--0--7") + "")),
+);
+$BaseButtonLabelColor: (
+  "positive": var(--primary-1),
+  "negative": var(--primary-1),
+  "default": var(--primary-1),
+  "transparent": var(--primary-1),
+  "bordered-negative": var(--primary-1),
+);
+$BaseButtonIconColor: (
+  "positive": var(--primary-1),
+  "negative": var(--primary-1),
+  "default": var(--primary-1),
+  "transparent": var(--primary-1),
+  "bordered-negative": var(--primary-1),
+);
+$BaseButtonLabelHoverColor: (
+  "positive": var(--primary-1),
+  "negative": var(--primary-1),
+  "default": var(--primary-1),
+  "transparent": var(--primary-1),
+);
+$BaseButtonIconHoverColor: (
+  "positive": var(--bg-1),
+  "negative": var(--bg-1),
+  "default": var(--bg-1),
+  "transparent": var(--primary-1),
+  "bordered-negative": var(--primary-1),
+);
+$BaseButtonLabelFocusColor: (
+  "positive": var(--primary-1),
+  "negative": var(--primary-1),
+  "default": var(--primary-1),
+  "transparent": var(--primary-1),
+  "bordered-negative": var(--primary-1),
+);
+$BaseButtonIconFocusColor: (
+  "positive": var(--primary-1),
+  "negative": var(--primary-1),
+  "default": var(--primary-1),
+  "transparent": var(--primary-1),
+  "bordered-negative": var(--primary-1),
+);
+
+$BaseButtonSize: (
+  "lg": unquote(getUnit("baseUnit-14") + "px"),
+  "md": unquote(getUnit("baseUnit-12") + "px"),
+  "sm": unquote(getUnit("baseUnit-10") + "px"),
+  "xs": unquote(getUnit("baseUnit-8") + "px"),
+  "min": unquote(getUnit("baseUnit-7") + "px"),
+);
+$BaseButtonDisabledColor: (
+  "positive": rgba(var(--rgba-2), unquote(getNumber("numberSize--0--5") + "")),
+  "negative": rgba(var(--rgba-7), unquote(getNumber("numberSize--0--5") + "")),
+  "default": rgba(var(--rgba-3), unquote(getNumber("numberSize--0--5") + "")),
+  "transparent": var(--primary-transparent),
+  "bordered-negative":
+    rgba(var(--rgba-7), unquote(getNumber("numberSize--0--5") + "")),
+);
+
+$BaseButtonDisabledBgColor: (
+  "positive": rgba(var(--rgba-2), unquote(getNumber("numberSize--0--5") + "")),
+  "negative": rgba(var(--rgba-7), unquote(getNumber("numberSize--0--5") + "")),
+  "default": rgba(var(--rgba-3), unquote(getNumber("numberSize--0--5") + "")),
+  "bordered-negative": var(--primary-transparent),
+  "transparent": var(--primary-transparent),
+);
+
+$BaseButtonDisabledBorderColor: (
+  "positive": rgba(var(--rgba-2), unquote(getNumber("numberSize--0--5") + "")),
+  "negative": rgba(var(--rgba-7), unquote(getNumber("numberSize--0--5") + "")),
+  "default": rgba(var(--rgba-3), unquote(getNumber("numberSize--0--5") + "")),
+  "bordered-negative":
+    rgba(var(--rgba-7), unquote(getNumber("numberSize--0--5") + "")),
+  "transparent": var(--primary-transparent),
+);
+$BaseButtonDisabledBorderFocusBgColor: (
+  "positive": rgba(var(--rgba-2), unquote(getNumber("numberSize--0--5") + "")),
+  "negative": rgba(var(--rgba-7), unquote(getNumber("numberSize--0--5") + "")),
+  "default": rgba(var(--rgba-3), unquote(getNumber("numberSize--0--5") + "")),
+  "transparent": var(--primary-transparent),
+  "bordered-negative":
+    rgba(var(--rgba-7), unquote(getNumber("numberSize--0--5") + "")),
+);
+
+$BaseButtonDisabledBgHoverColor: (
+  "positive": rgba(var(--rgba-2), unquote(getNumber("numberSize--0--5") + "")),
+  "negative": rgba(var(--rgba-7), unquote(getNumber("numberSize--0--5") + "")),
+  "default": rgba(var(--rgba-3), unquote(getNumber("numberSize--0--5") + "")),
+  "transparent": var(--primary-transparent),
+  "bordered-negative": var(--primary-transparent),
+);
+$BaseButtonDisabledLabelColor: (
+  "positive": rgba(var(--rgba-1), unquote(getNumber("numberSize--0--5") + "")),
+  "negative": rgba(var(--rgba-1), unquote(getNumber("numberSize--0--5") + "")),
+  "default": rgba(var(--rgba-1), unquote(getNumber("numberSize--0--5") + "")),
+  "transparent":
+    rgba(var(--rgba-1), unquote(getNumber("numberSize--0--5") + "")),
+  "bordered-negative":
+    rgba(var(--rgba-1), unquote(getNumber("numberSize--0--5") + "")),
+);
+$BaseButtonDisabledHoverLabelColor: (
+  "positive": rgba(var(--rgba-1), unquote(getNumber("numberSize--0--5") + "")),
+  "negative": rgba(var(--rgba-1), unquote(getNumber("numberSize--0--5") + "")),
+  "default": rgba(var(--rgba-1), unquote(getNumber("numberSize--0--5") + "")),
+  "transparent":
+    rgba(var(--rgba-1), unquote(getNumber("numberSize--0--5") + "")),
+  "bordered-negative":
+    rgba(var(--rgba-1), unquote(getNumber("numberSize--0--5") + "")),
+);
+
+$baseButtontFontSize: (
+  "lg": unquote(getNumber("numberSize--25") + "px"),
+  "md": unquote(getNumber("numberSize--15") + "px"),
+  "sm": unquote(getNumber("numberSize--15") + "px"),
+  "xs": unquote(getNumber("numberSize--12") + "px"),
+  "min": unquote(getNumber("numberSize--12") + "px"),
+);
+
+//default button
+$baseButtonLabelFont: (
+  "": "abmont_probold",
+);
+$baseButtonTransition: unquote(getNumber("numberSize--0--2") + "s all");
+$baseButtonColor: (
+  "": var(--bg-14),
+);
+$baseButtonBorderRadiusDefault: (
+  "": unquote(getUnit("baseUnit-1") + "px"),
+);
+$baseButtonFont: (
+  "": "abmontblack",
+);
+$baseButtonHeightDefault: (
+  "": unquote(getUnit("baseUnit-12") + "px"),
+);
+$baseButtonFontSizeDefault: (
+  "": unquote(getUnit("baseUnit-3") + "px"),
+);
+$baseButtonBorderColor: (var(--b-3));
+$baseButtonMarginDefault: (
+  "": unquote(getUnit("baseUnit-0") + "px")
+    unquote(getUnit("baseUnit-0") + "px") unquote(getUnit("baseUnit-0") + "px")
+    unquote(getUnit("baseUnit-0") + "px"),
+);
+$baseButtonPadding: (
+  "": unquote(getUnit("baseUnit-0") + "px")
+    unquote(getUnit("baseUnit-3") + "px") unquote(getUnit("baseUnit-0") + "px")
+    unquote(getUnit("baseUnit-3") + "px"),
+);
+$baseButtonBorder: (
+  "": unquote(getNumber("numberSize--1") + "px"),
+);
+$baseButtonBgColorDefault: (
+  "": var(--bg-3),
+);
+
+$baseButtonHoverBgColorDefault: rgba(
+  var(--rgba-3),
+  unquote(getNumber("numberSize--0--7"))
+);
+$baseButtonFocusBgColorDefault: rgba(
+  var(--rgba-3),
+  unquote(getNumber("numberSize--0--5"))
+);
+$baseButtonFocusBorderColorDefault: rgba(
+  var(--rgba-3),
+  unquote(getNumber("numberSize--0--7") + "")
+);
+
+/*===============Input Types===============*/
+$BaseInputTypes: (
+  "negative": unquote(getNumber("numberSize--1") + "px") solid
+    getColor("primary-7"),
+  "positive": unquote(getNumber("numberSize--1") + "px") solid
+    getColor("primary-2"),
+  "transparent": unquote(getNumber("numberSize--1") + "px") solid
+    getColor("transparent"),
+);
+$BaseInputBgColor: (
+  "negative": var(--primary-7),
+  "positive": var(--primary-2),
+  "transparent": var(--input-transparent),
+);
+$BaseInputSize: (
+  // 'lg': unquote(getUnit('baseUnit-12') + 'px'),
+    "md": unquote(getUnit("baseUnit-12") + "px"),
+  "sm": unquote(getUnit("baseUnit-10") + "px"),
+  "xs": unquote(getUnit("baseUnit-8") + "px")
+);
+$baseInputFontSize: (
+  // 'lg':unquote(getNumber('numberSize--25') + 'px'),
+    "md": unquote(getNumber("numberSize--15") + "px"),
+  "sm": unquote(getNumber("numberSize--13") + "px"),
+  "xs": unquote(getNumber("numberSize--11") + "px")
+);
+//default input
+$baseInputColorDefault: (
+  "": getColor("primary-1"),
+);
+$baseInputBorderRadiusDefault: (
+  "": unquote(getUnit("baseUnit-1") + "px"),
+);
+$baseInputFont: (
+  "": "abmont_proregular",
+);
+$baseInputHeightDefault: (
+  "": unquote(getUnit("baseUnit-12") + "px"),
+);
+$baeInputFontSizeDefault: (
+  "": unquote(getNumber("numberSize--15") + "px")
+);
+$baseInputMargin: (
+  "": unquote(getUnit("baseUnit-0") + "px")
+    unquote(getUnit("baseUnit-0") + "px") unquote(getUnit("baseUnit-0") + "px")
+    unquote(getUnit("baseUnit-0") + "px"),
+);
+$baseInputPadding: (
+  "": unquote(getUnit("baseUnit-0") + "px")
+    unquote(getUnit("baseUnit-2") + "px") unquote(getUnit("baseUnit-0") + "px")
+    unquote(getUnit("baseUnit-2") + "px"),
+);
+$baseInputBorderColor: (
+  "": var(--border2),
+);
+
+$baseInputBorder: (
+  "": unquote(getNumber("numberSize--1") + "px"),
+);
+$BaseInputBgColorDefault: (
+  "": var(--input-4),
+);
+
+/*=============== Icons===============*/
+$baseIconGrid: (
+  "xl": unquote(getUnit("baseUnit-13") + "px"),
+  "lg": unquote(getUnit("baseUnit-10") + "px"),
+  "md": unquote(getUnit("baseUnit-6") + "px"),
+  "sm": unquote(getUnit("baseUnit-4") + "px"),
+  "xs": unquote(getUnit("baseUnit-4") + "px"),
+);
+$baseIconSize: (
+  "xl": unquote(getNumber("numberSize--28") + "px"),
+  "lg": unquote(getNumber("numberSize--28") + "px"),
+  "md": unquote(getNumber("numberSize--20") + "px"),
+  "sm": unquote(getNumber("numberSize--15") + "px"),
+  "xs": unquote(getUnit("baseUnit-2") + "px"),
+);
+//default icons
+$baseIcontFontSize: (
+  "": unquote(getUnit("baseUnit-4") + "px"),
+);
+$baseIcontHeightWidthGrid: (
+  "": unquote(getUnit("baseUnit-5") + "px"),
+);
+$baseIcontColor: var(--icon-color-1);
+$baseIcontBgColor: (
+  "": getColor("transparent"),
+);
+$baseIcontMargin: (
+  "": unquote(getUnit("baseUnit-0") + "px")
+    unquote(getUnit("baseUnit-2") + "px") unquote(getUnit("baseUnit-0") + "px")
+    unquote(getUnit("baseUnit-2") + "px"),
+);
+$baseIconPadding: (
+  "": unquote(getUnit("baseUnit-0") + "px")
+    unquote(getUnit("baseUnit-0") + "px") unquote(getUnit("baseUnit-0") + "px")
+    unquote(getUnit("baseUnit-0") + "px"),
+);
+
+/*===============Labels===============*/
+$lineHeight: (
+  "28": unquote(getNumber("numberSize--28") + "px"),
+);
+$baseLabelGrid: (
+  "lg": unquote(getUnit("baseUnit-7") + "px"),
+  "md": unquote(getUnit("baseUnit-5") + "px"),
+  "sm": unquote(getUnit("baseUnit-4") + "px"),
+  "xs": unquote(getUnit("baseUnit-4") + "px"),
+);
+$baseLabelSizes: (
+  "lg": unquote(getNumber("numberSize--22") + "px"),
+  "md": unquote(getNumber("numberSize--15") + "px"),
+  "sm": unquote(getNumber("numberSize--12") + "px"),
+  "xs": unquote(getNumber("numberSize--11") + "px"),
+);
+$baseLabelFontWeight: (
+  "lg": bold,
+  "md": bold,
+  "sm": unquote(getNumber("numberSize--500") + ""),
+  "xs": unquote(getNumber("numberSize--500") + ""),
+);
+$baseLabelLineHeight: (
+  "lg": unquote(getUnit("baseUnit-7") + "px"),
+  "md": unquote(getUnit("baseUnit-5") + "px"),
+  "sm": unquote(getUnit("baseUnit-4") + "px"),
+  "xs": unquote(getUnit("baseUnit-4") + "px"),
+);
+$featureSetting: (
+  "lg": "case" on,
+  "md": "case" on,
+  "sm": initial,
+  "xs":  initial,
+);
+$baseLabelFontFamily: (
+  "lg": "abmont_probold",
+  "md": "abmont_prodemibold",
+  "sm": "abmont_prodemibold",
+  "xs": "abmont_prodemibold",
+);
+//default labels
+$baseLabelFontSize: (
+  "": unquote(getNumber("numberSize--12") + "px"),
+);
+$baseLabelHeightWidthGrid: (
+  "": unquote(getUnit("baseUnit-4") + "px"),
+);
+$baseLabelBorderRadius: (
+  "": unquote(getUnit("baseUnit-1") + "px"),
+);
+$baseLabelColor: var(--label-color-1);
+$baseLabelBgColor: (
+  "": getColor("transparent"),
+);
+$baseLabelFont: (
+  "": "abmont_prodemibold",
+);
+$baseLabelFonDefaultWeight: (
+  "": bold,
+);
+$baseLabeltMargin: (
+  "": unquote(getUnit("baseUnit-0") + "px")
+    unquote(getUnit("baseUnit-0") + "px") unquote(getUnit("baseUnit-0") + "px")
+    unquote(getUnit("baseUnit-0") + "px"),
+);
+$baseLabelpadding: (
+  "": unquote(getUnit("baseUnit-0") + "px")
+    unquote(getUnit("baseUnit-0") + "px") unquote(getUnit("baseUnit-0") + "px")
+    unquote(getUnit("baseUnit-0") + "px"),
+);
+
+//default Filter
+$filterGrayscale: (
+  "100": unquote(getNumber("numberSize--100")),
+  "0": unquote(getNumber("numberSize--0")),
+);
+//default filterBlur
+$fltrBlur: (
+    "8": unquote(getNumber("numberSize--8") + "px"),
+    "0": unquote(getNumber("numberSize--0") ),
+
+);
+
+//default Scroll
+
+$defaultScrollColor: getColor("primary-5");
+$defaultScrollColoBg: getColor("primary-7");
+$baseLabelFeatureSetting: (
+  "": "case" on,
+);

@@ -1,0 +1,227 @@
+/*Display*/
+$Display: (f: flex,
+  b: block,
+  i: inline,
+  i-b: inline-block,
+  i-f: inline-flex,
+  flexbox: flexbox,
+  table: table,
+  table-row: table-row,
+  table-call: table-cell,
+  n: none,
+);
+/*Flex*/
+$Flex: (flex: flex,
+);
+/*FlexdDrection*/
+$FlexdDrection: (
+  d-row: row,
+  d-column: column,
+  d-row-reserve: row-reserve,
+  d-column-reverse: column-reverse,
+  d-initial: initial,
+);
+/*FlexWrap*/
+$FlexWrap: (wrap: wrap,
+  no-wrap: nowrap,
+  wrap-reverse: wrap-reverse,
+);
+/*FlexAlign*/
+$FlexAlign: (a-stretch: stretch,
+  a-start: flex-start,
+  a-center: center,
+  a-end: flex-end,
+
+);
+/*FlexAlign*/
+$ScrolledDisplay: (scrolled-flex: flex,
+  scrolled-none: none,
+  scrolled-block: block,
+  scrolled-inline: inline,
+);
+$ScrolledFlexAlign: (
+  a-start: flex-start,
+  a-center: center,
+  a-end: flex-end,
+);
+/*FlexAlignContent*/
+$FlexAlignContent: (a-content-start: flex-start,
+  a-content-center: center,
+  a-content-end: end,
+  a-content-between: space-between,
+  a-content-around: space-around,
+);
+/*FlexAlignSelf*/
+$FlexAlignSelf: (a-self-auto: auto,
+  a-self-start: flex-start,
+  a-self-center: center,
+  a-self-end: flex-end,
+  a-self-stretch: stretch,
+);
+/*FlexJustify*/
+$FlexJustify: (j-start: flex-start,
+  j-center: center,
+  j-end: flex-end,
+  j-between: space-between,
+  j-around: space-around,
+);
+/*FlexJustify*/
+$FlexShrink: (
+  shrink-inherit: inherit,
+  shrink-initial: initial,
+  shrink-0: 0,
+  shrink-1: 1,
+  shrink-2: 2,
+);
+/*obejectFit*/
+$obejectFit: (contain: contain,
+  cover: cover,
+  fill: fill,
+  none: none,
+  scale-down: scale-down,
+);
+/*obejectPosition*/
+$obejectPosition: (p-down: bottom,
+  p-center: center,
+  p-left: left,
+  p-left-down: left bottom,
+  p-left-up: left top,
+  p--right: right,
+  p-right-down: right bottom,
+  p-right-up: right top,
+  p-top: top,
+);
+/*Overflow*/
+$Overflow: (
+  hidden: hidden,
+  auto: auto,
+  visible: visible,
+  scroll: scroll,
+);
+//OverflowY
+$OverflowY: (y-hidden: hidden,
+  y-auto: auto,
+  y-scroll: scroll,
+);
+//OverflowX
+$OverflowX: (x-hidden: hidden,
+  x-auto: auto,
+  x-scroll: scroll,
+);
+//Position
+$Position: (static: static,
+  fixed: fixed,
+  absolute: absolute,
+  relative: relative,
+  sticky: sticky,
+);
+//visibility
+$Visibility: (hidden: hidden, visible: visible,
+);
+//cursor
+$Cursor: (auto: auto,
+  default: default,
+  wait: wait,
+  text: text,
+  pointer: pointer,
+  move: move,
+  not-allowed: not-allowed,
+);
+//outline
+$Outline: (none: none,
+);
+//pointerEvents
+$PointerEvents: (event-none: none,
+  event-auto: auto,
+);
+//Resize
+$Resize: (none: none,
+  both: both,
+  y: vertical,
+  x: horizontal,
+);
+//userSelect
+$userSelect: (select-none: none,
+  select-text: text,
+  select-all: all,
+  select-auto: auto,
+);
+//WhiteSpace
+$WhiteSpace : (
+  nowrap: nowrap,
+  normal: normal !important,
+  unset: unset,
+  pre: pre,
+  pre-lite: pre-line,
+  pre-wrap: pre-wrap,
+);
+//FontSetting
+$FontSetting: (font-setting-case-on: 'case'on,
+  font-setting-normal: normal,
+  font-setting-smcp: "smcp",
+  font-setting-smcp-on: "smcp"on,
+  font-setting-fswsh-2: "swsh"2,
+  font-setting-smcp-swsh-2: "smcp"",""swsh"2,
+  font-setting-inherit: inherit,
+  font-setting-initial: initial,
+  font-setting-unset: unset,
+);
+//BgSize
+$bgSize: (size-cover: cover,
+  size-contain: contain,
+  size-full: 100%,
+);
+//bgRepeat
+$bgRepeat: (no-repeat: no-repeat,
+  repeat: repeat,
+  repeat-y: repeat-y,
+  repeat-x:repeat-x,
+);
+//bgPosition
+$bgPosition: (position-left: left,
+  position-top: top,
+  position-right: right,
+  position-bottom: bottom,
+  position-center: center,
+);
+//FontTrasform
+$FontTrasform: (t-u: uppercase,
+  t-l: lowercase,
+  t-n: none,
+  t-full-width: full-width,
+  t-full-size-kana: full-size-kana,
+);
+//FontTrasform
+$FontAlign: (a-start: start,
+  a-center: center,
+  a-end: end,
+);
+$FontDecoration: (d-none: none,
+  d-dotted: dotted,
+  d-underline: underline,
+  d-unset: unset,
+);
+$FontOverflow: (
+  overflow-ellipsis: ellipsis,
+);
+
+$FontStyles: (
+  style-italic: italic,
+  style-normal: normal,
+  style-oblique: oblique,
+);
+
+
+$FontWeight: (100: 100,
+  200: 200,
+  300: 300,
+  400: 400,
+  500: 500,
+  600: 600,
+  700: 700,
+  800: 800,
+  900: 900,
+  light: light,
+  bold: bold,
+  medium: medium,
+)

@@ -1,0 +1,17 @@
+$class: 'container';
+$activItemClass: 'aitem-container';
+$hoverItemClass: 'hitem-container';
+$activeClass:'a-container';
+$hoverClass:'h-container';
+
+@include generateResponsiveAtomic() {
+
+    @each $key,
+    $value in $Container {
+        max-width: $defaultContainer;
+
+        &-#{$key} {
+            max-width: $value;
+        }
+    }
+}

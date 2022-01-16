@@ -1,0 +1,88 @@
+ // numbers list
+ $numberList: ();
+
+ //global number size
+ @for $i from 0 through $maxNumber {
+   $numberList: map-set($numberList, getNumber(unquote('numberSize--'+ $i)), $i);
+ }
+
+ // BaseMinNumber sizes styles
+ $BaseMinNumberSizes: ();
+
+ @for $i from 0 through $maxBaseMinNumber-percent {
+   $BaseMinNumberSizes: map-set($BaseMinNumberSizes, unquote('percent--'+ $i), getPercent(unquote('baseSize--'+ $i)));
+ }
+
+ // BaseMinNumber vh size
+ @for $i from 0 through $maxBaseMinNumber-vh {
+   $BaseMinNumberSizes: map-set($BaseMinNumberSizes, unquote('vh--'+ $i), getVh(unquote('vhSize-'+ $i)));
+ }
+
+  // BaseMinNumber vw size
+  @for $i from 0 through $maxBaseMinNumber-vw {
+    $BaseMinNumberSizes: map-set($BaseMinNumberSizes, unquote('vw--'+ $i), getVw(unquote('vwSize-'+ $i)));
+  }
+
+ //  // BaseMinNumber em size
+ //  @for $i from 0 through $maxBaseMinNumber-em {
+ //    $BaseMinNumberSizes: map-set($BaseMinNumberSizes, unquote('em--'+ $i), getEm(unquote('emSize-'+ $i)));
+ //  }
+
+ //  // BaseMinNumber rem size
+ //  @for $i from 0 through $maxBaseMinNumber-rem {
+ //    $BaseMinNumberSizes: map-set($BaseMinNumberSizes, unquote('rem--'+ $i), getRem(unquote('remSize-'+ $i)));
+ //  }
+
+ // BaseMinNumber px size
+//  @for $i from 0 through $maxBaseMinNumber-px {
+//    $BaseMinNumberSizes: map-set($BaseMinNumberSizes, unquote('px--'+ $i), getPx(unquote('pxSize-'+ $i)));
+//  }
+
+ // size styles
+ $baseSizeTypes: ();
+
+ // percent size
+ @for $i from 0 through $max-percent {
+   $baseSizeTypes: map-set($baseSizeTypes, unquote('percent--'+ $i), getPercent(unquote('baseSize--'+ $i)));
+ }
+
+ // vh size 
+ @for $i from 0 through $max-vh {
+  //  @if $i%$baseUnit==0 {
+     $baseSizeTypes: map-set($baseSizeTypes, unquote('vh--'+ $i), getVh(unquote('vhSize-'+ $i)));
+  //  }
+ }
+
+ // px size 
+ @for $i from 0 through $max-px {
+   $baseSizeTypes: map-set($baseSizeTypes, unquote('px--'+ $i), getPx(unquote('pxSize-'+ $i)));
+ }
+
+ //  // vw size
+ //  @for $i from 0 through $max-vw {
+ //    @if $i%$baseUnit==0 {
+ //      $baseSizeTypes: map-set($baseSizeTypes, unquote('vw--'+ $i), getVw(unquote('vwSize-'+ $i)));
+ //    }
+ //  }
+
+ //  // em size 
+ //  @for $i from 0 through $max-em {
+ //    @if $i%$baseUnit==0 {
+ //      $baseSizeTypes: map-set($baseSizeTypes, unquote('em--'+ $i), getEm(unquote('emSize-'+ $i)));
+ //    }
+ //  }
+
+ //  // rem size
+ //  @for $i from 0 through $max-rem {
+ //    @if $i%$baseUnit==0 {
+ //      $baseSizeTypes: map-set($baseSizeTypes, unquote('rem--'+ $i), getRem(unquote('remSize-'+ $i)));
+ //    }
+ //  }
+ // z-index list
+ $baseZindexList: ();
+
+ @for $i from 0 through $max-zindex {
+   $baseZindexList: map-set($baseZindexList, unquote(+ $i), getNumber(unquote('numberSize--'+ $i)));
+ }
+
+ // zransitions list

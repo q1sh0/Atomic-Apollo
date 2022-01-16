@@ -1,0 +1,20 @@
+//global white
+$class: 'white';
+$activItemClass: null;
+$hoverItemClass: null;
+$activeClass: null;
+$hoverClass: null;
+
+// $activItemClass: 'aitem-white';
+// $hoverItemClass: 'hitem-white';
+// $activeClass:'a-white';
+// $hoverClass:'h-white';
+@include generateResponsiveAtomic() {
+
+    @each $key,
+    $value in $WhiteSpace {
+        &-space-#{$key} {
+            white-space: $value;
+        }
+    }
+}

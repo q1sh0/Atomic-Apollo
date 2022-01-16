@@ -1,0 +1,25 @@
+$class: 'shadow';
+$activItemClass: 'aitem-shadow';
+$hoverItemClass: 'hitem-shadow';
+$activeClass:'a-shadow';
+$hoverClass:'h-shadow';
+
+@include generateResponsiveAtomic() {
+
+    @each $key,
+    $value in $baseShadowOpacity {
+
+        @each $color,
+        $hex in $baseColors {
+
+            @each $shadowKey,
+            $shadowValue in $baseShadowSize {
+                &-#{$shadowKey}-#{$color} {
+                    &-#{$key} {
+                        box-shadow: #{$shadowValue} rgba($hex, $value);
+                    }
+                }
+            }
+        }
+    }
+}

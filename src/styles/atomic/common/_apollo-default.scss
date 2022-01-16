@@ -1,0 +1,251 @@
+my-app,
+adj-item,
+adj-grid,
+adj-form-grid {
+    display: block;
+}
+@-ms-viewport {
+    width: device-width;
+}
+* {
+    outline: none;
+    box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  display: block;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: #181b21;
+    user-select: none;
+    -webkit-user-select: none;
+    overflow-x: hidden;
+}
+a {
+    color: #fff;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+        text-decoration: none;
+    }
+}
+// ------------deafult styles /.------------//
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+    border-style: none;
+}
+// ------------button type /.------------//
+._s_scroll {
+    &-md::-webkit-scrollbar {
+        width: 8px;
+    }
+    &-sm::-webkit-scrollbar {
+        width: 4px;
+    }
+    &-0::-webkit-scrollbar {
+        display: none;
+        width: 0;
+        height: 0;
+    }
+    &-0::-webkit-scrollbar-track {
+        display: none;
+        width: 0;
+        height: 0;
+    }
+    &-0::-webkit-scrollbar-thumb {
+        display: none;
+        width: 0;
+        height: 0;
+    }
+
+    &-red::-webkit-scrollbar-track {
+        background: var(--scroll-5),
+    }
+    &-red::-webkit-scrollbar-thumb {
+        background: var(--scroll-3),
+    }
+}
+._s_color-rgba-bg-primary-0-0 {
+    background-color: var(--scroll-5)!important;
+}
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+::-webkit-scrollbar-track {
+    background-color: var(--scroll-5);
+    border-radius: 0;
+    border: none;
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--scroll-7);
+    border-radius: 0;
+    border: none;
+}
+// ------------browser scroll stype /.------------//
+._s_input {
+    overflow: visible !important;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+adj-calendar-new {
+    min-width: 160px;
+    height: 50px;
+    position: relative;
+    border-radius: 5px;
+    background-color: #191e23;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    align-items: center;
+    display: flex;
+}
+._s_valid {
+    .in-valid {
+        border-bottom: 2px solid #c91f20;
+    }
+    .ng-valid {
+        &.ng-touched {
+            border-bottom: 2px solid #01AC2D;
+        }
+    }
+    &-hide-success {
+        .ng-valid {
+            &.ng-touched {
+                border-bottom: 2px solid transparent;
+            }
+        }
+    }
+}
+._s_input {
+    &:focus {
+        &~._s_label {
+            top: 0;
+        }
+    }
+}
+.ng-valid,
+._s_has-value,
+._s_valid {
+    &~._s_label {
+        top: 0;
+    }
+    ._s_validlabel {
+        top: 0;
+    }
+}
+select {
+    &._s_input {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        text-indent: 1px;
+        text-overflow: '';
+        box-shadow: none;
+        cursor: pointer;
+
+        &::-ms-expand {
+            display: none;
+        }
+    }
+    &:hover,
+    &:focus {
+        outline: none;
+    }
+}
+._s_disable-dropdown {
+    ._s_input,
+    ._s_icon,
+    ._s_label {
+        color: #323b43;
+    }
+}
+// ------------default apollo json-html forms /.------------//
+@supports (-webkit-appearance: -apple-pay-button) {
+    .apple-pay-button {
+        display: inline-block;
+        -webkit-appearance: -apple-pay-button;
+        -apple-pay-button-type: add-money;
+    }
+    .apple-pay-button-black {
+        -apple-pay-button-style: black;
+    }
+    .apple-pay-button-white {
+        -apple-pay-button-style: white;
+    }
+    .apple-pay-button-white-with-line {
+        -apple-pay-button-style: white-outline;
+    }
+}
+@supports not (-webkit-appearance: -apple-pay-button) {
+    .apple-pay-button {
+        width: 100%;
+        display: inline-block;
+        background-size: 100% 60%;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        border-radius: 5px;
+        padding: 0px;
+        box-sizing: border-box;
+        min-width: 200px;
+        min-height: 32px;
+        max-height: 64px;
+    }
+    .apple-pay-button-black {
+        background-image: -webkit-named-image(apple-pay-logo-white);
+        background-color: black;
+    }
+    .apple-pay-button-white {
+        background-image: -webkit-named-image(apple-pay-logo-black);
+        background-color: white;
+    }
+    .apple-pay-button-white-with-line {
+        background-image: -webkit-named-image(apple-pay-logo-black);
+        background-color: white;
+        border: .5px solid black;
+    }
+}
+// ------------apple button /.------------//
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -100%, 0);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.fadeInDown {
+    animation-name: fadeInDown;
+}
+.animated {
+    animation-duration: .5s;
+    animation-fill-mode: both;
+}
+// ------------header animation /.------------//
+
+// ------------ Active borders ------------//
+._s_a-b {
+  ._s_aitem-bt-primary-3 {
+    border-top-color: #c91f20;
+  }
+  ._s_aitem-bd-primary-8 {
+    border-bottom-color: #a2a9b3;
+  }
+}
+
+// ------------ Accept ratio paddings ------------//
+
+._s_pb-mobile-home {
+  padding-bottom: 68%;
+}

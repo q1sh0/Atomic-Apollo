@@ -1,0 +1,20 @@
+//global object
+$class: 'bg';
+$activItemClass: null;
+$hoverItemClass: null;
+$activeClass: null;
+$hoverClass: null;
+
+// $activItemClass: 'aitem-bg';
+// $hoverItemClass: 'hitem-bg';
+// $activeClass:'a-bg';
+// $hoverClass:'h-bg';
+@include generateResponsiveAtomic() {
+
+    @each $key,
+    $value in $baseBgImages {
+        &-#{$key} {
+            background-image: $value;
+        }
+    }
+}

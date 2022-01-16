@@ -1,0 +1,15 @@
+$class: 'transition';
+$activItemClass: 'aitem-transition';
+$hoverItemClass: 'hitem-transition';
+$activeClass:'a-transition';
+$hoverClass:'h-transition';
+
+@include generateResponsiveAtomic() {
+
+  @each $key,
+  $value in $baseTransition {
+    &-#{$key} {
+      transition: $value;
+    }
+  }
+}

@@ -1,0 +1,76 @@
+$globalPrefix: '._s_';
+$HoverClassHoverName: ':hover';
+
+$breakpoints: (
+    // sm: 576px,
+    // md: 768px,
+    // lg: 1200px,
+    // xl: 1600px,
+);
+
+@mixin generateResponsiveAtomic() {
+
+    @include generateAtomic() {
+        @content;
+    }
+
+    @each $size,
+    $value in $breakpoints {
+        @media (min-width: $value) {
+            @include generateAtomic($size) {
+                @content;
+            }
+        }
+    }
+}
+@mixin child($class, $isSibling : false, $breakpointPrefix: '') {
+    $sibling: null;
+
+    @if($isSibling) {
+        $sibling: $globalPrefix+$breakpointPrefix+$activeClass;
+    }
+    @if($isSibling) {
+        $sibling: $globalPrefix+$breakpointPrefix+$hoverClass+$HoverClassHoverName;
+    }
+
+    #{$sibling}#{$globalPrefix}#{$breakpointPrefix}#{$class} {
+        @content;
+    }
+}
+
+@mixin generateAtomic($size: null) {
+
+    $breakpointPrefix: '';
+
+    @if($size) {
+        $breakpointPrefix: $size+'-'
+    }
+
+    @if($class) {
+        @include child($class, false, $breakpointPrefix) {
+            @content;
+        }
+    }
+
+    // active Class
+    @if($activeClass) {
+        #{$globalPrefix}#{$breakpointPrefix}#{$activeClass} {
+            @include child($activItemClass, false, $breakpointPrefix) {
+                @content;
+            }
+        }
+    }
+    // hover Class
+    @if($hoverClass) {
+        #{$globalPrefix}#{$breakpointPrefix}#{$hoverClass}#{$HoverClassHoverName} {
+            @include child($hoverItemClass, false, $breakpointPrefix) {
+                @content;
+            }
+        }
+    }
+     @if($hoverItemClass) {
+         @include child($hoverItemClass, true, $breakpointPrefix) {
+             @content;
+         }
+     }
+}

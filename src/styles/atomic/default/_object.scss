@@ -1,0 +1,27 @@
+//global object
+$class: 'object';
+$activItemClass: null;
+$hoverItemClass: null;
+$activeClass: null;
+$hoverClass: null;
+// $activItemClass: 'aitem-object';
+// $hoverItemClass: 'hitem-object';
+// $activeClass:'a-object';
+// $hoverClass:'h-object';
+
+@include generateResponsiveAtomic() {
+
+    @each $key,
+    $value in $obejectFit {
+        &-#{$key} {
+            object-fit: $value;
+        }
+    }
+
+    @each $key,
+    $value in $obejectPosition {
+        &-#{$key} {
+            object-position: $value;
+        }
+    }
+}
