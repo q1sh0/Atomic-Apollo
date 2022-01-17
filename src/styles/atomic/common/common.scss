@@ -81,231 +81,548 @@
   }
 
 
-  // builded classNames need pars side fix !
-
+  // builded classNames need pars side fix !!!!!
 ._s_btn:hover {
-  border-color: rgba(var(--rgba-3), 0.7);
-  background-color: rgba(var(--rgba-3), 0.7);
+    background-color: rgba(var(--rgba-3), .7)
 }
+
+._s_btn:focus,
+._s_btn:hover {
+    border-color: rgba(var(--rgba-3), .7)
+}
+
 ._s_btn:focus {
-  border-color: rgba(var(--rgba-3), 0.7);
-  background-color: rgba(var(--rgba-3), 0.5);
+    background-color: rgba(var(--rgba-3), .5)
+}
+
+._s_btn-anti {
+    background-color: rgba(var(--rgba-7), .4);
+    border: 1px solid rgba(var(--rgba-7), 0);
+    border-radius: 80px
+}
+
+._s_btn-anti:hover {
+    border-color: var(--bg-7);
+    background-color: var(--bg-7)
+}
+
+._s_btn-anti:focus {
+    border-color: var(--b-6);
+    background-color: rgba(var(--rgba-7), 0)
+}
+
+._s_btn-anti:focus ._s_label,
+._s_btn-anti:hover ._s_label {
+    color: var(--primary-1)
+}
+
+._s_btn-anti:hover ._s_icon {
+    color: var(--bg-1)
+}
+
+._s_btn-anti ._s_icon,
+._s_btn-anti ._s_label,
+._s_btn-anti:focus ._s_icon {
+    color: var(--primary-1)
+}
+
+._s_btn-positive {
+    background-color: var(--bg-2);
+    border: 1px solid var(--bg-2);
+    border-radius: 4px
 }
 
 ._s_btn-positive:hover {
-  border-color: rgba(var(--rgba-2), 0.7);
-  background-color: rgba(var(--rgba-2), 0.7);
+    border-color: rgba(var(--rgba-2), .7);
+    background-color: rgba(var(--rgba-2), .7)
 }
+
 ._s_btn-positive:focus {
-  border-color: var(--b-2);
-  background-color: rgba(var(--rgba-2), 0.5);
+    border-color: var(--b-2);
+    background-color: rgba(var(--rgba-2), .5)
 }
+
+._s_btn-positive:focus ._s_label,
 ._s_btn-positive:hover ._s_label {
-  color: var(--primary-1);
+    color: var(--primary-1)
 }
-._s_btn-positive:focus ._s_label {
-  color: var(--primary-1);
-}
+
 ._s_btn-positive:hover ._s_icon {
-  color: var(--bg-1);
+    color: var(--bg-1)
 }
+
+._s_btn-positive ._s_icon,
+._s_btn-positive ._s_label,
 ._s_btn-positive:focus ._s_icon {
-  color: var(--primary-1);
+    color: var(--primary-1)
 }
+
+._s_btn-negative {
+    background-color: var(--bg-7);
+    border: 1px solid var(--bg-7);
+    border-radius: 4px
+}
+
 ._s_btn-negative:hover {
-  border-color: rgba(var(--rgba-7), 0.7);
-  background-color: rgba(var(--rgba-7), 0.7);
+    border-color: rgba(var(--rgba-7), .7);
+    background-color: rgba(var(--rgba-7), .7)
 }
+
 ._s_btn-negative:focus {
-  border-color: var(--b-7);
-  background-color: rgba(var(--rgba-7), 0.5);
+    border-color: var(--b-7);
+    background-color: rgba(var(--rgba-7), .5)
 }
+
+._s_btn-negative:focus ._s_label,
 ._s_btn-negative:hover ._s_label {
-  color: var(--primary-1);
+    color: var(--primary-1)
 }
-._s_btn-negative:focus ._s_label {
-  color: var(--primary-1);
-}
+
 ._s_btn-negative:hover ._s_icon {
-  color: var(--bg-1);
+    color: var(--bg-1)
 }
+
+._s_btn-negative ._s_icon,
+._s_btn-negative ._s_label,
 ._s_btn-negative:focus ._s_icon {
-  color: var(--primary-1);
+    color: var(--primary-1)
 }
+
+._s_btn-default {
+    background-color: var(--bg-3);
+    border: 1px solid var(--bg-3);
+    border-radius: 4px
+}
+
 ._s_btn-default:hover {
-  border-color: rgba(var(--rgba-3), 0.7);
-  background-color: rgba(var(--rgba-3), 0.7);
+    border-color: rgba(var(--rgba-3), .7);
+    background-color: rgba(var(--rgba-3), .7)
 }
+
 ._s_btn-default:focus {
-  border-color: var(--b-3);
-  background-color: rgba(var(--rgba-3), 0.5);
+    border-color: var(--b-3);
+    background-color: rgba(var(--rgba-3), .5)
 }
+
+._s_btn-default:focus ._s_label,
 ._s_btn-default:hover ._s_label {
-  color: var(--primary-1);
+    color: var(--primary-1)
 }
-._s_btn-default:focus ._s_label {
-  color: var(--primary-1);
-}
+
 ._s_btn-default:hover ._s_icon {
-  color: var(--bg-1);
+    color: var(--bg-1)
 }
+
+._s_btn-default ._s_icon,
+._s_btn-default ._s_label,
 ._s_btn-default:focus ._s_icon {
-  color: var(--primary-1);
+    color: var(--primary-1)
 }
+
+._s_btn-transparent {
+    background-color: var(--primary-transparent);
+    border: 1px solid var(--primary-transparent);
+    border-radius: 4px
+}
+
 ._s_btn-transparent:hover {
-  border-color: var(--primary-transparent);
-  background-color: var(--primary-transparent);
+    border-color: var(--primary-transparent);
+    background-color: var(--primary-transparent)
 }
+
 ._s_btn-transparent:focus {
-  border-color: rgba(var(--rgba-8), 0.7);
-  background-color: var(--primary-transparent);
+    border-color: rgba(var(--rgba-8), .7);
+    background-color: var(--primary-transparent)
 }
+
+._s_btn-transparent ._s_icon,
+._s_btn-transparent ._s_label,
+._s_btn-transparent:focus ._s_icon,
+._s_btn-transparent:focus ._s_label,
+._s_btn-transparent:hover ._s_icon,
 ._s_btn-transparent:hover ._s_label {
-  color: var(--primary-1);
+    color: var(--primary-1)
 }
-._s_btn-transparent:focus ._s_label {
-  color: var(--primary-1);
-}
-._s_btn-transparent:hover ._s_icon {
-  color: var(--primary-1);
-}
-._s_btn-transparent:focus ._s_icon {
-  color: var(--primary-1);
+
+._s_btn-bordered-negative {
+    background-color: var(--primary-transparent);
+    border: 1px solid var(--b-7);
+    border-radius: 4px
 }
 
 ._s_btn-bordered-negative:hover {
-  border-color: rgba(var(--rgba-7), 0.5);
-  background-color: var(--primary-transparent);
+    border-color: rgba(var(--rgba-7), .5);
+    background-color: var(--primary-transparent)
 }
+
 ._s_btn-bordered-negative:focus {
-  border-color: rgba(var(--rgba-7), 0.7);
-  background-color: var(--primary-transparent);
+    border-color: rgba(var(--rgba-7), .7);
+    background-color: var(--primary-transparent)
 }
-._s_btn-bordered-negative:focus ._s_label {
-  color: var(--primary-1);
-}
+
+._s_btn-bordered-negative ._s_icon,
+._s_btn-bordered-negative ._s_label,
+._s_btn-bordered-negative:focus ._s_icon,
+._s_btn-bordered-negative:focus ._s_label,
 ._s_btn-bordered-negative:hover ._s_icon {
-  color: var(--primary-1);
+    color: var(--primary-1)
 }
-._s_btn-bordered-negative:focus ._s_icon {
-  color: var(--primary-1);
+
+._s_btn-lg {
+    font-size: 25px;
+    height: 56px
 }
-._s_btn-bordered-negative ._s_label {
-  color: var(--primary-1);
+
+._s_btn-md {
+    font-size: 15px;
+    height: 48px
 }
-._s_btn-bordered-negative ._s_icon {
-  color: var(--primary-1);
+
+._s_btn-sm {
+    font-size: 15px;
+    height: 40px
 }
+
+._s_btn-xs {
+    font-size: 12px;
+    height: 32px
+}
+
+._s_btn-min {
+    font-size: 12px;
+    height: 28px
+}
+
+._s_btn-disabled-positive ._s_icon,
+._s_btn-disabled-positive ._s_label {
+    color: rgba(var(--rgba-1), .5)
+}
+
 ._s_btn-disabled-positive:hover {
-  cursor: default !important;
-  border-color: rgba(var(--rgba-2), 0.5);
-  background-color: rgba(var(--rgba-2), 0.5);
+    cursor: default !important;
+    border-color: rgba(var(--rgba-2), .5);
+    background-color: rgba(var(--rgba-2), .5)
 }
+
 ._s_btn-disabled-positive:hover ._s_label {
-  color: rgba(var(--rgba-1), 0.5);
+    color: rgba(var(--rgba-1), .5)
 }
+
 ._s_btn-disabled-positive:hover ._s_icon {
-  color: var(--primary-1);
+    color: var(--primary-1)
 }
+
 ._s_btn-disabled-positive:focus {
-  cursor: default !important;
-  border-color: rgba(var(--rgba-2), 0.5);
-  background-color: rgba(var(--rgba-2), 0.5);
+    cursor: default !important;
+    border-color: rgba(var(--rgba-2), .5);
+    background-color: rgba(var(--rgba-2), .5)
 }
+
 ._s_btn-disabled-positive:focus ._s_label {
-  color: rgba(var(--rgba-1), 0.5);
+    color: rgba(var(--rgba-1), .5)
 }
+
 ._s_btn-disabled-positive:focus ._s_icon {
-  color: var(--primary-1);
+    color: var(--primary-1)
 }
+
+._s_btn-disabled-negative ._s_icon,
+._s_btn-disabled-negative ._s_label {
+    color: rgba(var(--rgba-1), .5)
+}
+
 ._s_btn-disabled-negative:hover {
-  cursor: default !important;
-  border-color: rgba(var(--rgba-7), 0.5);
-  background-color: rgba(var(--rgba-7), 0.5);
+    cursor: default !important;
+    border-color: rgba(var(--rgba-7), .5);
+    background-color: rgba(var(--rgba-7), .5)
 }
+
 ._s_btn-disabled-negative:hover ._s_label {
-  color: rgba(var(--rgba-1), 0.5);
+    color: rgba(var(--rgba-1), .5)
 }
+
 ._s_btn-disabled-negative:hover ._s_icon {
-  color: var(--primary-1);
+    color: var(--primary-1)
 }
+
 ._s_btn-disabled-negative:focus {
-  cursor: default !important;
-  border-color: rgba(var(--rgba-7), 0.5);
-  background-color: rgba(var(--rgba-7), 0.5);
+    cursor: default !important;
+    border-color: rgba(var(--rgba-7), .5);
+    background-color: rgba(var(--rgba-7), .5)
 }
+
 ._s_btn-disabled-negative:focus ._s_label {
-  color: rgba(var(--rgba-1), 0.5);
+    color: rgba(var(--rgba-1), .5)
 }
+
 ._s_btn-disabled-negative:focus ._s_icon {
-  color: var(--primary-1);
+    color: var(--primary-1)
 }
+
+._s_btn-disabled-default ._s_icon,
+._s_btn-disabled-default ._s_label {
+    color: rgba(var(--rgba-1), .5)
+}
+
 ._s_btn-disabled-default:hover {
-  cursor: default !important;
-  border-color: rgba(var(--rgba-3), 0.5);
-  background-color: rgba(var(--rgba-3), 0.5);
+    cursor: default !important;
+    border-color: rgba(var(--rgba-3), .5);
+    background-color: rgba(var(--rgba-3), .5)
 }
+
 ._s_btn-disabled-default:hover ._s_label {
-  color: rgba(var(--rgba-1), 0.5);
+    color: rgba(var(--rgba-1), .5)
 }
+
 ._s_btn-disabled-default:hover ._s_icon {
-  color: var(--primary-1);
+    color: var(--primary-1)
 }
+
 ._s_btn-disabled-default:focus {
-  cursor: default !important;
-  border-color: rgba(var(--rgba-3), 0.5);
-  background-color: rgba(var(--rgba-3), 0.5);
+    cursor: default !important;
+    border-color: rgba(var(--rgba-3), .5);
+    background-color: rgba(var(--rgba-3), .5)
 }
+
 ._s_btn-disabled-default:focus ._s_label {
-  color: rgba(var(--rgba-1), 0.5);
+    color: rgba(var(--rgba-1), .5)
 }
+
 ._s_btn-disabled-default:focus ._s_icon {
-  color: var(--primary-1);
+    color: var(--primary-1)
 }
+
+._s_btn-disabled-transparent ._s_icon,
+._s_btn-disabled-transparent ._s_label {
+    color: rgba(var(--rgba-1), .5)
+}
+
 ._s_btn-disabled-transparent:hover {
-  cursor: default !important;
-  border-color: var(--primary-transparent);
-  background-color: var(--primary-transparent);
+    cursor: default !important;
+    border-color: var(--primary-transparent);
+    background-color: var(--primary-transparent)
 }
+
 ._s_btn-disabled-transparent:hover ._s_label {
-  color: rgba(var(--rgba-1), 0.5);
+    color: rgba(var(--rgba-1), .5)
 }
+
 ._s_btn-disabled-transparent:hover ._s_icon {
-  color: var(--primary-1);
+    color: var(--primary-1)
 }
+
 ._s_btn-disabled-transparent:focus {
-  cursor: default !important;
-  border-color: var(--primary-transparent);
-  background-color: var(--primary-transparent);
+    cursor: default !important;
+    border-color: var(--primary-transparent);
+    background-color: var(--primary-transparent)
 }
+
 ._s_btn-disabled-transparent:focus ._s_label {
-  color: rgba(var(--rgba-1), 0.5);
+    color: rgba(var(--rgba-1), .5)
 }
+
 ._s_btn-disabled-transparent:focus ._s_icon {
-  color: var(--primary-1);
+    color: var(--primary-1)
 }
+
+._s_btn-disabled-bordered-negative ._s_icon,
+._s_btn-disabled-bordered-negative ._s_label {
+    color: rgba(var(--rgba-1), .5)
+}
+
 ._s_btn-disabled-bordered-negative:hover {
-  cursor: default !important;
-  border-color: rgba(var(--rgba-7), 0.5);
-  background-color: var(--primary-transparent);
+    cursor: default !important;
+    border-color: rgba(var(--rgba-7), .5);
+    background-color: var(--primary-transparent)
 }
+
 ._s_btn-disabled-bordered-negative:hover ._s_label {
-  color: rgba(var(--rgba-1), 0.5);
+    color: rgba(var(--rgba-1), .5)
 }
+
 ._s_btn-disabled-bordered-negative:hover ._s_icon {
-  color: var(--primary-1);
+    color: var(--primary-1)
 }
+
 ._s_btn-disabled-bordered-negative:focus {
-  cursor: default !important;
-  border-color: rgba(var(--rgba-7), 0.5);
-  background-color: var(--primary-transparent);
+    cursor: default !important;
+    border-color: rgba(var(--rgba-7), .5);
+    background-color: var(--primary-transparent)
 }
+
 ._s_btn-disabled-bordered-negative:focus ._s_label {
-  color: rgba(var(--rgba-1), 0.5);
+    color: rgba(var(--rgba-1), .5)
 }
+
 ._s_btn-disabled-bordered-negative:focus ._s_icon {
-  color: var(--primary-1);
+    color: var(--primary-1)
 }
+
+._s_btn-active-anti {
+    border-radius: 80px;
+    border-color: rgba(var(--rgba-7), 0);
+    border: 1px solid rgba(var(--rgba-8), .5);
+    color: rgba(var(--rgba-8), .5);
+    background-color: var(--bg-7)
+}
+
+._s_btn-active-anti ._s_icon,
+._s_btn-active-anti ._s_label {
+    color: var(--primary-1)
+}
+
+._s_btn-active-anti:hover {
+    border-color: rgba(var(--rgba-8), .5);
+    background-color: var(--bg-7)
+}
+
+._s_btn-active-anti:hover ._s_icon,
+._s_btn-active-anti:hover ._s_label {
+    color: var(--primary-1)
+}
+
+._s_btn-active-anti:focus {
+    border-color: rgba(var(--rgba-8), .5);
+    background-color: var(--bg-7)
+}
+
+._s_btn-active-anti:focus ._s_icon,
+._s_btn-active-anti:focus ._s_label {
+    color: var(--primary-1)
+}
+
+._s_btn-active-positive {
+    border-radius: 4px;
+    border-color: var(--bg-2);
+    border: 1px solid var(--primary-transparent);
+    color: rgba(var(--rgba-2), .5);
+    background-color: rgba(var(--rgba-2), .5)
+}
+
+._s_btn-active-positive ._s_icon,
+._s_btn-active-positive ._s_label {
+    color: var(--primary-1)
+}
+
+._s_btn-active-positive:hover {
+    border-color: var(--primary-transparent);
+    background-color: rgba(var(--rgba-2), .5)
+}
+
+._s_btn-active-positive:hover ._s_icon,
+._s_btn-active-positive:hover ._s_label {
+    color: var(--primary-1)
+}
+
+._s_btn-active-positive:focus {
+    border-color: var(--primary-transparent);
+    background-color: rgba(var(--rgba-2), .5)
+}
+
+._s_btn-active-positive:focus ._s_icon,
+._s_btn-active-positive:focus ._s_label {
+    color: var(--primary-1)
+}
+
+._s_btn-active-negative {
+    border-radius: 4px;
+    border-color: var(--bg-7);
+    border: 1px solid var(--primary-transparent);
+    color: rgba(var(--rgba-7), .5);
+    background-color: rgba(var(--rgba-7), .5)
+}
+
+._s_btn-active-negative ._s_icon,
+._s_btn-active-negative ._s_label {
+    color: var(--primary-1)
+}
+
+._s_btn-active-negative:hover {
+    border-color: var(--primary-transparent);
+    background-color: rgba(var(--rgba-7), .5)
+}
+
+._s_btn-active-negative:hover ._s_icon,
+._s_btn-active-negative:hover ._s_label {
+    color: var(--primary-1)
+}
+
+._s_btn-active-negative:focus {
+    border-color: var(--primary-transparent);
+    background-color: rgba(var(--rgba-7), .5)
+}
+
+._s_btn-active-negative:focus ._s_icon,
+._s_btn-active-negative:focus ._s_label {
+    color: var(--primary-1)
+}
+
+._s_btn-active-default {
+    border-radius: 4px;
+    border-color: var(--bg-3);
+    border: 1px solid var(--primary-transparent);
+    color: rgba(var(--rgba-3), .5);
+    background-color: rgba(var(--rgba-3), .5)
+}
+
+._s_btn-active-default ._s_icon,
+._s_btn-active-default ._s_label {
+    color: var(--primary-1)
+}
+
+._s_btn-active-default:hover {
+    border-color: var(--primary-transparent);
+    background-color: rgba(var(--rgba-3), .5)
+}
+
+._s_btn-active-default:hover ._s_icon,
+._s_btn-active-default:hover ._s_label {
+    color: var(--primary-1)
+}
+
+._s_btn-active-default:focus {
+    border-color: var(--primary-transparent);
+    background-color: rgba(var(--rgba-3), .5)
+}
+
+._s_btn-active-default:focus ._s_icon,
+._s_btn-active-default:focus ._s_label {
+    color: var(--primary-1)
+}
+
+._s_btn-active-transparent {
+    border-radius: 4px;
+    border-color: var(--primary-transparent);
+    border: 1px solid var(--primary-transparent);
+    color: var(--primary-transparent);
+    background-color: var(--primary-transparent)
+}
+
+._s_btn-active-transparent ._s_icon,
+._s_btn-active-transparent ._s_label {
+    color: var(--primary-1)
+}
+
+._s_btn-active-transparent:hover {
+    border-color: var(--primary-transparent);
+    background-color: var(--primary-transparent)
+}
+
+._s_btn-active-transparent:hover ._s_icon,
+._s_btn-active-transparent:hover ._s_label {
+    color: var(--primary-1)
+}
+
+._s_btn-active-transparent:focus {
+    border-color: var(--primary-transparent);
+    background-color: var(--primary-transparent)
+}
+
+._s_btn-active-transparent:focus ._s_icon,
+._s_btn-active-transparent:focus ._s_label {
+    color: var(--primary-1)
+}
+
 
 ._s_overflow-auto,._s_overflow-y-auto,._s_overflow-x-auto,._s_overflow-x-scroll {
   -webkit-overflow-scrolling: touch;
