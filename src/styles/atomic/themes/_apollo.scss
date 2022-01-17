@@ -129,7 +129,6 @@ $baseBorderColorPosition: (
   "transparent": transparent,
 );
 // $baseBgImages
-
 $baseBgImages: (
   "img-logo": var(--logo),
   "img-logo-am": var(--logo-am),
@@ -190,6 +189,7 @@ $baseTransformRotate: (
 );
 /*===============Spacings===============*/
 $baseSpacing: (
+  "30": unquote(getNumber("numberSize--120") + "px"),
   "10": unquote(getUnit("baseUnit-10") + "px"),
   "9": unquote(getUnit("baseUnit-9") + "px"),
   "8": unquote(getUnit("baseUnit-8") + "px"),
@@ -522,19 +522,20 @@ $BaseInputBgColorDefault: (
 
 /*=============== Icons===============*/
 $baseIconGrid: (
-  "xl": unquote(getUnit("baseUnit-13") + "px"),
-  "lg": unquote(getUnit("baseUnit-10") + "px"),
+  "xl": unquote(getUnit("baseUnit-10") + "px"),
+  "lg": unquote(getUnit("baseUnit-8") + "px"),
   "md": unquote(getUnit("baseUnit-6") + "px"),
-  "sm": unquote(getUnit("baseUnit-4") + "px"),
+  "sm": unquote(getUnit("baseUnit-5") + "px"),
   "xs": unquote(getUnit("baseUnit-4") + "px"),
 );
 $baseIconSize: (
-  "xl": unquote(getNumber("numberSize--28") + "px"),
+  "xl": unquote(getNumber("numberSize--44") + "px"),
   "lg": unquote(getNumber("numberSize--28") + "px"),
   "md": unquote(getNumber("numberSize--20") + "px"),
-  "sm": unquote(getNumber("numberSize--15") + "px"),
-  "xs": unquote(getUnit("baseUnit-2") + "px"),
+  "sm": unquote(getNumber("numberSize--16") + "px"),
+  "xs": unquote(getUnit("baseUnit-3") + "px"),
 );
+
 //default icons
 $baseIcontFontSize: (
   "": unquote(getUnit("baseUnit-4") + "px"),
@@ -564,37 +565,49 @@ $lineHeight: (
 $baseLabelGrid: (
   "lg": unquote(getUnit("baseUnit-7") + "px"),
   "md": unquote(getUnit("baseUnit-5") + "px"),
+  "md-regular": unquote(getUnit("baseUnit-5") + "px"),
   "sm": unquote(getUnit("baseUnit-4") + "px"),
+  "sm-regular": unquote(getUnit("baseUnit-4") + "px"),
   "xs": unquote(getUnit("baseUnit-4") + "px"),
 );
 $baseLabelSizes: (
   "lg": unquote(getNumber("numberSize--22") + "px"),
   "md": unquote(getNumber("numberSize--15") + "px"),
+  "md-regular": unquote(getNumber("numberSize--15") + "px"),
   "sm": unquote(getNumber("numberSize--12") + "px"),
+  "sm-regular": unquote(getNumber("numberSize--12") + "px"),
   "xs": unquote(getNumber("numberSize--11") + "px"),
 );
 $baseLabelFontWeight: (
   "lg": bold,
   "md": bold,
+  "md-regular": normal,
   "sm": unquote(getNumber("numberSize--500") + ""),
+  "sm-regular": normal,
   "xs": unquote(getNumber("numberSize--500") + ""),
 );
 $baseLabelLineHeight: (
   "lg": unquote(getUnit("baseUnit-7") + "px"),
   "md": unquote(getUnit("baseUnit-5") + "px"),
+  "md-regular": unquote(getUnit("baseUnit-5") + "px"),
   "sm": unquote(getUnit("baseUnit-4") + "px"),
+  "sm-regular": unquote(getUnit("baseUnit-4") + "px"),
   "xs": unquote(getUnit("baseUnit-4") + "px"),
 );
 $featureSetting: (
   "lg": "case" on,
   "md": "case" on,
+  "md-regular": initial,
   "sm": initial,
+  "sm-regular": initial,
   "xs":  initial,
 );
 $baseLabelFontFamily: (
   "lg": "abmont_probold",
   "md": "abmont_prodemibold",
+  "md-regular": "abmont_proregular",
   "sm": "abmont_prodemibold",
+  "sm-regular": "abmont_proregular",
   "xs": "abmont_prodemibold",
 );
 //default labels
