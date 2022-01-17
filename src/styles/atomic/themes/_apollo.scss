@@ -243,7 +243,7 @@ $defaultBorderLenght: (
 );
 /*===============Button Types===============*/
 $BaseButtonTypes: (
-  "anti": unquote(getNumber("numberSize--1") + "px") solid rgba(var(--rgba-7), unquote(getNumber("numberSize--0--4") + "")),
+  "anti": unquote(getNumber("numberSize--1") + "px") solid rgba(var(--rgba-7), unquote(getNumber("numberSize--0--0") + "")),
   "positive": unquote(getNumber("numberSize--1") + "px") solid var(--bg-2),
   "negative": unquote(getNumber("numberSize--1") + "px") solid var(--bg-7),
   "default": unquote(getNumber("numberSize--1") + "px") solid var(--bg-3),
@@ -454,11 +454,11 @@ $BaseButtonActiveBorderColor: (
 );
 $BaseButtonActiveBorderFocusBgColor: (
   "anti": rgba(var(--rgba-8), unquote(getNumber("numberSize--0--5") + "")),
-  "positive": rgba(var(--rgba-2), unquote(getNumber("numberSize--0--5") + "")),
-  "negative": rgba(var(--rgba-7), unquote(getNumber("numberSize--0--5") + "")),
-  "default": rgba(var(--rgba-3), unquote(getNumber("numberSize--0--5") + "")),
+  "positive": var(--primary-transparent),
+  "negative": var(--primary-transparent),
+  "default": var(--primary-transparent),
+  "bordered-negative":var(--primary-transparent),
   "transparent": var(--primary-transparent),
-  "bordered-negative": rgba(var(--rgba-7), unquote(getNumber("numberSize--0--5") + "")),
 );
 
 $BaseButtonActiveBgHoverColor: (
