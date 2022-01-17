@@ -243,6 +243,7 @@ $defaultBorderLenght: (
 );
 /*===============Button Types===============*/
 $BaseButtonTypes: (
+  "anti": unquote(getNumber("numberSize--1") + "px") solid rgba(var(--rgba-7), unquote(getNumber("numberSize--0--4") + "")),
   "positive": unquote(getNumber("numberSize--1") + "px") solid var(--bg-2),
   "negative": unquote(getNumber("numberSize--1") + "px") solid var(--bg-7),
   "default": unquote(getNumber("numberSize--1") + "px") solid var(--bg-3),
@@ -252,6 +253,7 @@ $BaseButtonTypes: (
     var(--b-7),
 );
 $BaseButtonBgColor: (
+  "anti": rgba(var(--rgba-7), unquote(getNumber("numberSize--0--4") + "")),
   "positive": var(--bg-2),
   "negative": var(--bg-7),
   "default": var(--bg-3),
@@ -259,6 +261,7 @@ $BaseButtonBgColor: (
   "bordered-negative": var(--primary-transparent),
 );
 $BaseButtonBgHoverColor: (
+  "anti": var(--bg-7),
   "positive": rgba(var(--rgba-2), unquote(getNumber("numberSize--0--7") + "")),
   "negative": rgba(var(--rgba-7), unquote(getNumber("numberSize--0--7") + "")),
   "default": rgba(var(--rgba-3), unquote(getNumber("numberSize--0--7") + "")),
@@ -266,6 +269,7 @@ $BaseButtonBgHoverColor: (
   "bordered-negative": var(--primary-transparent),
 );
 $BaseButtonBorderHoverColor: (
+  "anti": var(--bg-7),
   "positive": rgba(var(--rgba-2), unquote(getNumber("numberSize--0--7") + "")),
   "negative": rgba(var(--rgba-7), unquote(getNumber("numberSize--0--7") + "")),
   "default": rgba(var(--rgba-3), unquote(getNumber("numberSize--0--7") + "")),
@@ -274,6 +278,7 @@ $BaseButtonBorderHoverColor: (
     rgba(var(--rgba-7), unquote(getNumber("numberSize--0--5") + "")),
 );
 $BaseButtonBgFocusColor: (
+  "anti": rgba(var(--rgba-7), unquote(getNumber("numberSize--0--0") + "")),
   "positive": rgba(var(--rgba-2), unquote(getNumber("numberSize--0--5") + "")),
   "negative": rgba(var(--rgba-7), unquote(getNumber("numberSize--0--5") + "")),
   "default": rgba(var(--rgba-3), unquote(getNumber("numberSize--0--5") + "")),
@@ -281,6 +286,7 @@ $BaseButtonBgFocusColor: (
   "bordered-negative": var(--primary-transparent),
 );
 $BaseButtonBorderFocusColor: (
+  "anti": var(--b-6),
   "positive": var(--b-2),
   "negative": var(--b-7),
   "default": var(--b-3),
@@ -290,6 +296,7 @@ $BaseButtonBorderFocusColor: (
     rgba(var(--rgba-7), unquote(getNumber("numberSize--0--7") + "")),
 );
 $BaseButtonLabelColor: (
+  "anti": var(--primary-1),
   "positive": var(--primary-1),
   "negative": var(--primary-1),
   "default": var(--primary-1),
@@ -297,6 +304,7 @@ $BaseButtonLabelColor: (
   "bordered-negative": var(--primary-1),
 );
 $BaseButtonIconColor: (
+  "anti": var(--primary-1),
   "positive": var(--primary-1),
   "negative": var(--primary-1),
   "default": var(--primary-1),
@@ -304,12 +312,14 @@ $BaseButtonIconColor: (
   "bordered-negative": var(--primary-1),
 );
 $BaseButtonLabelHoverColor: (
+  "anti": var(--primary-1),
   "positive": var(--primary-1),
   "negative": var(--primary-1),
   "default": var(--primary-1),
   "transparent": var(--primary-1),
 );
 $BaseButtonIconHoverColor: (
+  "anti": var(--bg-1),
   "positive": var(--bg-1),
   "negative": var(--bg-1),
   "default": var(--bg-1),
@@ -317,6 +327,7 @@ $BaseButtonIconHoverColor: (
   "bordered-negative": var(--primary-1),
 );
 $BaseButtonLabelFocusColor: (
+  "anti": var(--primary-1),
   "positive": var(--primary-1),
   "negative": var(--primary-1),
   "default": var(--primary-1),
@@ -324,6 +335,7 @@ $BaseButtonLabelFocusColor: (
   "bordered-negative": var(--primary-1),
 );
 $BaseButtonIconFocusColor: (
+  "anti": var(--primary-1),
   "positive": var(--primary-1),
   "negative": var(--primary-1),
   "default": var(--primary-1),
@@ -338,7 +350,16 @@ $BaseButtonSize: (
   "xs": unquote(getUnit("baseUnit-8") + "px"),
   "min": unquote(getUnit("baseUnit-7") + "px"),
 );
+$BaseButtonBorderRadius: (
+  "anti": unquote(getUnit("baseUnit-20") + "px"),
+  "positive": unquote(getUnit("baseUnit-1") + "px"),
+  "negative": unquote(getUnit("baseUnit-1") + "px"),
+  "default": unquote(getUnit("baseUnit-1") + "px"),
+  "transparent": unquote(getUnit("baseUnit-1") + "px"),
+  "bordered-negative": unquote(getUnit("baseUnit-1") + "px"),
+);
 $BaseButtonDisabledColor: (
+  "anti": rgba(var(--rgba-6), unquote(getNumber("numberSize--0--6") + "")),
   "positive": rgba(var(--rgba-2), unquote(getNumber("numberSize--0--5") + "")),
   "negative": rgba(var(--rgba-7), unquote(getNumber("numberSize--0--5") + "")),
   "default": rgba(var(--rgba-3), unquote(getNumber("numberSize--0--5") + "")),
@@ -397,6 +418,79 @@ $BaseButtonDisabledHoverLabelColor: (
   "bordered-negative":
     rgba(var(--rgba-1), unquote(getNumber("numberSize--0--5") + "")),
 );
+
+
+
+
+
+
+// new typo active button
+
+$BaseButtonActiveColor: (
+  "anti": rgba(var(--rgba-8), unquote(getNumber("numberSize--0--5") + "")),
+  "positive": rgba(var(--rgba-2), unquote(getNumber("numberSize--0--5") + "")),
+  "negative": rgba(var(--rgba-7), unquote(getNumber("numberSize--0--5") + "")),
+  "default": rgba(var(--rgba-3), unquote(getNumber("numberSize--0--5") + "")),
+  "transparent": var(--primary-transparent),
+  "bordered-negative": rgba(var(--rgba-7), unquote(getNumber("numberSize--0--5") + "")),
+);
+
+$BaseButtonActiveBgColor: (
+  "anti":var(--bg-7),
+  "positive": rgba(var(--rgba-2), unquote(getNumber("numberSize--0--5") + "")),
+  "negative": rgba(var(--rgba-7), unquote(getNumber("numberSize--0--5") + "")),
+  "default": rgba(var(--rgba-3), unquote(getNumber("numberSize--0--5") + "")),
+  "bordered-negative": var(--primary-transparent),
+  "transparent": var(--primary-transparent),
+);
+
+$BaseButtonActiveBorderColor: (
+  "anti": rgba(var(--rgba-8), unquote(getNumber("numberSize--0--5") + "")),
+  "positive": var(--primary-transparent),
+  "negative": var(--primary-transparent),
+  "default": var(--primary-transparent),
+  "bordered-negative":var(--primary-transparent),
+  "transparent": var(--primary-transparent),
+);
+$BaseButtonActiveBorderFocusBgColor: (
+  "anti": rgba(var(--rgba-8), unquote(getNumber("numberSize--0--5") + "")),
+  "positive": rgba(var(--rgba-2), unquote(getNumber("numberSize--0--5") + "")),
+  "negative": rgba(var(--rgba-7), unquote(getNumber("numberSize--0--5") + "")),
+  "default": rgba(var(--rgba-3), unquote(getNumber("numberSize--0--5") + "")),
+  "transparent": var(--primary-transparent),
+  "bordered-negative": rgba(var(--rgba-7), unquote(getNumber("numberSize--0--5") + "")),
+);
+
+$BaseButtonActiveBgHoverColor: (
+  "anti": var(--bg-7),
+  "positive": rgba(var(--rgba-2), unquote(getNumber("numberSize--0--5") + "")),
+  "negative": rgba(var(--rgba-7), unquote(getNumber("numberSize--0--5") + "")),
+  "default": rgba(var(--rgba-3), unquote(getNumber("numberSize--0--5") + "")),
+  "transparent": var(--primary-transparent),
+  "bordered-negative": var(--primary-transparent),
+);
+$BaseButtonActiveLabelColor: (
+  "anti":var(--primary-1),
+  "positive":var(--primary-1),
+  "negative":var(--primary-1),
+  "default":var(--primary-1),
+  "transparent":var(--primary-1),
+  "bordered-negative":var(--primary-1),
+);
+$BaseButtonActiveHoverLabelColor: (
+  "anti": var(--primary-1),
+  "positive": var(--primary-1),
+  "negative": var(--primary-1),
+  "default": var(--primary-1),
+  "transparent": var(--primary-1),
+  "bordered-negative": var(--primary-1),
+);
+// new typo active button /.
+
+
+
+
+
 
 $baseButtontFontSize: (
   "lg": unquote(getNumber("numberSize--25") + "px"),

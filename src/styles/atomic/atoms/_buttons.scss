@@ -55,7 +55,7 @@ $hoverClass: "h-btn";
       &-#{$key} {
         background-color: map_get($BaseButtonBgColor, #{$key});
         border: $value;
-
+        border-radius: map_get($BaseButtonBorderRadius, #{$key});
         //btn hover
         &:hover {
           border-color: map_get($BaseButtonBorderHoverColor, #{$key});
@@ -114,6 +114,8 @@ $hoverClass: "h-btn";
       &-disabled-#{$key} {
         user-select: none;
         cursor: default !important;
+                border: $value;
+
         border-color: map_get($BaseButtonDisabledColor, #{$key});
         color: map_get($BaseButtonDisabledColor, #{$key});
         background-color: map_get($BaseButtonDisabledBgColor, #{$key});
@@ -147,13 +149,55 @@ $hoverClass: "h-btn";
           ._s_label {
             color: map_get($BaseButtonDisabledHoverLabelColor, #{$key});
           }
+          //Icon
+          ._s_icon {
+            color: map_get($BaseButtonIconColor, #{$key});
+          }
+        }
+      }
+    }
+    //active  button
+    @each $key, $value in $BaseButtonTypes {
+      &-active-#{$key} {
+        border-radius: map_get($BaseButtonBorderRadius, #{$key});
+        border: $value;
+        border-width: map_get($baseButtonBorder, #{$key});
+        border-color: map_get($BaseButtonActiveBorderColor, #{$key});
+        color: map_get($BaseButtonActiveColor, #{$key});
+        background-color: map_get($BaseButtonActiveBgColor, #{$key});
+
+        ._s_icon,
+        ._s_label {
+          color: map_get($BaseButtonActiveHoverLabelColor, #{$key});
+        }
+
+        &:hover {
+          border-color: map_get($BaseButtonActiveBorderColor, #{$key});
+          background-color: map_get($BaseButtonActiveBgHoverColor, #{$key});
+
+          //btn label
+          ._s_label {
+            color: map_get($BaseButtonActiveHoverLabelColor, #{$key});
+          }
 
           //Icon
           ._s_icon {
             color: map_get($BaseButtonIconColor, #{$key});
           }
         }
-        
+        &:focus {
+          border-color: map_get($BaseButtonActiveBorderFocusBgColor, #{$key});
+          background-color: map_get($BaseButtonActiveBgHoverColor, #{$key});
+
+          //btn label
+          ._s_label {
+            color: map_get($BaseButtonActiveHoverLabelColor, #{$key});
+          }
+          //Icon
+          ._s_icon {
+            color: map_get($BaseButtonIconColor, #{$key});
+          }
+        }
       }
     }
   }
