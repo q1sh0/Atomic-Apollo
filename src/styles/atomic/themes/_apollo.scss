@@ -566,7 +566,7 @@ $baseInputBorder: (
   "": unquote(getNumber("numberSize--1") + "px"),
 );
 $BaseInputBgColorDefault: (
-  "": var(--input-4),
+  "": var(--input-bg-4),
 );
 
 /*=============== Icons===============*/
