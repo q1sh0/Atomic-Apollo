@@ -81,7 +81,7 @@
   }
 
 
-  // builded classNames need pars side fix !!!!!
+  // [[[[[[[[ builded classNames need pars side fix :hovers & :focus ]]]]]]]]
 ._s_btn:hover {
     background-color: rgba(var(--rgba-3), .7)
 }
@@ -94,21 +94,14 @@
 ._s_btn:focus {
     background-color: rgba(var(--rgba-3), .5)
 }
-
-._s_btn-anti {
-    background-color: rgba(var(--rgba-7), .4);
-    border: 1px solid rgba(var(--rgba-7), 0);
-    border-radius: 80px
-}
-
 ._s_btn-anti:hover {
     border-color: var(--bg-7);
     background-color: var(--bg-7)
 }
 
 ._s_btn-anti:focus {
-    border-color: var(--b-6);
-    background-color: rgba(var(--rgba-7), 0)
+    border-color: rgba(var(--rgba-8), .5);
+    background-color: var(--bg-7)
 }
 
 ._s_btn-anti:focus ._s_label,
@@ -124,12 +117,6 @@
 ._s_btn-anti ._s_label,
 ._s_btn-anti:focus ._s_icon {
     color: var(--primary-1)
-}
-
-._s_btn-positive {
-    background-color: var(--bg-2);
-    border: 1px solid var(--bg-2);
-    border-radius: 4px
 }
 
 ._s_btn-positive:hover {
@@ -157,12 +144,6 @@
     color: var(--primary-1)
 }
 
-._s_btn-negative {
-    background-color: var(--bg-7);
-    border: 1px solid var(--bg-7);
-    border-radius: 4px
-}
-
 ._s_btn-negative:hover {
     border-color: rgba(var(--rgba-7), .7);
     background-color: rgba(var(--rgba-7), .7)
@@ -187,13 +168,6 @@
 ._s_btn-negative:focus ._s_icon {
     color: var(--primary-1)
 }
-
-._s_btn-default {
-    background-color: var(--bg-3);
-    border: 1px solid var(--bg-3);
-    border-radius: 4px
-}
-
 ._s_btn-default:hover {
     border-color: rgba(var(--rgba-3), .7);
     background-color: rgba(var(--rgba-3), .7)
@@ -219,12 +193,6 @@
     color: var(--primary-1)
 }
 
-._s_btn-transparent {
-    background-color: var(--primary-transparent);
-    border: 1px solid var(--primary-transparent);
-    border-radius: 4px
-}
-
 ._s_btn-transparent:hover {
     border-color: var(--primary-transparent);
     background-color: var(--primary-transparent)
@@ -244,12 +212,6 @@
     color: var(--primary-1)
 }
 
-._s_btn-bordered-negative {
-    background-color: var(--primary-transparent);
-    border: 1px solid var(--b-7);
-    border-radius: 4px
-}
-
 ._s_btn-bordered-negative:hover {
     border-color: rgba(var(--rgba-7), .5);
     background-color: var(--primary-transparent)
@@ -266,31 +228,6 @@
 ._s_btn-bordered-negative:focus ._s_label,
 ._s_btn-bordered-negative:hover ._s_icon {
     color: var(--primary-1)
-}
-
-._s_btn-lg {
-    font-size: 25px;
-    height: 56px
-}
-
-._s_btn-md {
-    font-size: 15px;
-    height: 48px
-}
-
-._s_btn-sm {
-    font-size: 15px;
-    height: 40px
-}
-
-._s_btn-xs {
-    font-size: 12px;
-    height: 32px
-}
-
-._s_btn-min {
-    font-size: 12px;
-    height: 28px
 }
 
 ._s_btn-disabled-positive ._s_icon,
@@ -458,14 +395,6 @@
     color: var(--primary-1)
 }
 
-._s_btn-active-anti {
-    border-radius: 80px;
-    border-color: rgba(var(--rgba-7), 0);
-    border: 1px solid rgba(var(--rgba-8), .5);
-    color: rgba(var(--rgba-8), .5);
-    background-color: var(--bg-7)
-}
-
 ._s_btn-active-anti ._s_icon,
 ._s_btn-active-anti ._s_label {
     color: var(--primary-1)
@@ -491,14 +420,6 @@
     color: var(--primary-1)
 }
 
-._s_btn-active-positive {
-    border-radius: 4px;
-    border-color: var(--bg-2);
-    border: 1px solid var(--primary-transparent);
-    color: rgba(var(--rgba-2), .5);
-    background-color: rgba(var(--rgba-2), .5)
-}
-
 ._s_btn-active-positive ._s_icon,
 ._s_btn-active-positive ._s_label {
     color: var(--primary-1)
@@ -522,14 +443,6 @@
 ._s_btn-active-positive:focus ._s_icon,
 ._s_btn-active-positive:focus ._s_label {
     color: var(--primary-1)
-}
-
-._s_btn-active-negative {
-    border-radius: 4px;
-    border-color: var(--bg-7);
-    border: 1px solid var(--primary-transparent);
-    color: rgba(var(--rgba-7), .5);
-    background-color: rgba(var(--rgba-7), .5)
 }
 
 ._s_btn-active-negative ._s_icon,
@@ -590,14 +503,6 @@
     color: var(--primary-1)
 }
 
-._s_btn-active-transparent {
-    border-radius: 4px;
-    border-color: var(--primary-transparent);
-    border: 1px solid var(--primary-transparent);
-    color: var(--primary-transparent);
-    background-color: var(--primary-transparent)
-}
-
 ._s_btn-active-transparent ._s_icon,
 ._s_btn-active-transparent ._s_label {
     color: var(--primary-1)
@@ -622,16 +527,16 @@
 ._s_btn-active-transparent:focus ._s_label {
     color: var(--primary-1)
 }
-
-
-._s_overflow-auto,._s_overflow-y-auto,._s_overflow-x-auto,._s_overflow-x-scroll {
-  -webkit-overflow-scrolling: touch;
+// is not hard code, need fix buttons global pars. priorities ამბავია css ის კითხვის დროს.
+._s_overflow-visibled {
+    overflow: visible !important
 }
-
 ._s_check-radio-disabled ._s_adj-check {
     color: #1d2329;
 }
-
+._s_overflow-auto,._s_overflow-y-auto,._s_overflow-x-auto,._s_overflow-x-scroll {
+  -webkit-overflow-scrolling: touch;
+}
 ._s_body_overflow {
   overflow: hidden;
   height: 100%;
@@ -674,11 +579,80 @@
   }
 }
 
-//
 
 ._s_scroll-x-md::-webkit-scrollbar {
   height: 8px
 }
 ._s_scroll-x-sm::-webkit-scrollbar {
   height: 4px
+}
+
+input:-internal-autofill-selected {
+    background-color: rgb(232, 240, 254) !important;
+    background-image: none !important;
+    color: -internal-light-dark-color(black, transparent) !important;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+    border: 1px solid #323b43;
+    -webkit-text-fill-color: #fff;
+    -webkit-box-shadow: 0 0 0 1000px rgb(29, 36, 41) inset;
+    transition: background-color 5000s ease-in-out 0s;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-text-fill-color: #ffffff;
+    -webkit-animation: autofill 0s forwards;
+    -webkit-transition-delay: 99999s;
+    animation: autofill 0s forwards;
+}
+
+//for enter-with-sms -- auth
+._s_label-xxs {
+  font-size: 10px!important;
+}
+
+._s_size-h-vh--22 {
+  height: 88vh !important;
+}
+
+// Infinite rotate anim
+
+._s_transform-rotate-infinite {
+    -webkit-animation: rotating 1s linear infinite;
+    -moz-animation: rotating 1s linear infinite;
+    -ms-animation: rotating 1s linear infinite;
+    -o-animation: rotating 1s linear infinite;
+    animation: rotating 1s linear infinite;
+}
+@keyframes rotating {
+    from {
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -ms-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+// hide cursor for disable input
+._s_disabled-input {
+    color: transparent !important;
+    text-shadow: 0px 0px 0px #323b43;
+}
+
+//for account layer responsive
+._s_calc-height {
+    max-height: calc(100vh - 318px);
 }

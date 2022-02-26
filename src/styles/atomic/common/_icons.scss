@@ -19,12 +19,36 @@
   }
 }
 
+._s_adj-Loader:before {
+  content: "\e9a6";
+}
+
+._s_adj-25:before {
+  content: "\e9a5";
+}
+
+._s_adj-vip-support:before {
+  content: "\e9a2";
+}
+
+._s_adj-Viber:before {
+  content: "\e9a3";
+}
+
+._s_adj-Whatsapp:before {
+  content: "\e9a4";
+}
+
 ._s_adj-passport:before {
   content: "\e9a1";
 }
 
 ._s_adj-residence:before {
   content: "\e99e";
+}
+
+._s_adj-document:before {
+  content: "\e99f";
 }
 
 ._s_adj-upload:before {
@@ -662,4 +686,3 @@
 ._s_adj-belote:before {
   content: "\e988";
 }
-

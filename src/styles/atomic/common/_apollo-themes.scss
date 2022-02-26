@@ -1,6 +1,6 @@
 // ------------------ ewl data theme heeader------------------ //
 
-//  betfair header, micro:color color   
+//  betfair header, micro:color color
 ._s_apollo-data-theme-header {
   --primary-8: #191e23;
   --primary-1: #191e23;
@@ -23,21 +23,79 @@
   --logo: url('https://newstatic.adjarabet.com/static/atomic/images/logos/logo-black.svg');
   --logo-am: url('https://newstatic.adjarabet.com/static/atomic/images/logos/logo-am-black.svg');
   --logo-sm: url('https://newstatic.adjarabet.com/static/atomic/images/logos/mini-logo-black.svg');
-  
 
-  //  betfair header, micro:color child  notification 
-    ._s_apollo-data-theme-header--notif {
-        --label-color-1: #1e1e1e;
-        --bg-6: #F0F1F5;
-        --bg-7: #DCDCDC;
-        --primary-6:#F0F1F5;
-        --b-position-7: #DCDCDC;
-        --scroll-5: #F0F1F5;
-        --scroll-7: #DCDCDC;
-        --scroll-3: #DCDCDC;
+  //  betfair header, micro:color child  notification
+  ._s_apollo-data-theme-header--notif {
+    --label-color-1: #1e1e1e;
+    --bg-6: #F0F1F5;
+    --bg-7: #DCDCDC;
+    --primary-6: #F0F1F5;
+    --b-position-7: #DCDCDC;
+    --scroll-5: #F0F1F5;
+    --scroll-7: #DCDCDC;
+    --scroll-3: #DCDCDC;
+  }
 
-    }
+  ._s_apollo-data-theme-header--layer {
+    --bg-5: #FFFFFF;
+    --primary-5: #FFFFFF;
+    --bg-6: #FFFFFF;
+    --label-color-1: #1e1e1e;
+    --primary-8: #7F7F7F;
+    --b-position-7: #DCDCDC;
+  }
+
+  ._s_apollo-data-theme-header--btn {
+    --bg-3: #c91f20;
+    --label-color-1: #ffffff;
+  }
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:active,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:hover {
+    -webkit-box-shadow: 0 0 0 1000px #fff inset;
+    -webkit-text-fill-color: #000000;
+    border: 1px solid #ffffff;
+  }
 }
+
+._s_apollo-data-theme-mobile-header {
+  // fk wr // background-color: rgba(var(--rgba-0), rgba(var(--opacity-7));
+  // }
+  --icon-color-1: #1e1e1e;
+  --label-color-1: #1e1e1e;
+  --bg-4: #ffb80c;
+
+  ._s_apollo-data-theme-header--user {
+    --primary-8: #1e1e1e;
+    --label-color-1: #ffffff;
+  }
+
+  ._s_apollo-data-theme-header--layer {
+    --bg-5: #FFFFFF;
+    --primary-5: #FFFFFF;
+    --bg-6: #FFFFFF;
+    --label-color-1: #1e1e1e;
+    --primary-8: #7F7F7F;
+    --b-position-7: #DCDCDC;
+    --primary-1: #DCDCDC;
+  }
+  ._s_apollo-data-theme-balance--layer {
+    --primary-1: #1E1E1E;
+    --primary-8: #626262;
+    --bg-2: #FFB80C;
+  }
+  ._s_apollo-data-theme-switch--layer {
+
+    --bg-4: #CCCCCC;
+    --bg-6: #F0F1F5;
+    --primary-6: #626262;
+    --primary-8: #626262;
+    --primary-2: #626262;
+  }
+}
+
 // ------------------ ewl data theme footer------------------ //
 ._s_apollo-data-theme-footer {
   --primary-8: #191e23;
@@ -51,24 +109,13 @@
   --scroll-5: #dcdcdc;
   --scroll-3: #c2c2c2;
 }
-// ------------------ ewl data theme mobile headeer------------------ //
-._s_apollo-data-theme-mobile-header {
-  // // fk (rgba) css var!!! 
-  // // background-color: rgba(var(--rgba-0), rgba(var(--opacity-7));
-  // ._s_color-rgba-bg-primary-0-0--7 {
-  //   background-color: #ffb80c;
-  // }
-  --icon-color-1: #1e1e1e;
-  --label-color-1: #1e1e1e;
-  --bg-4: #ffb80c;
-}
 
 // ------------------ ewl data theme mobile footer------------------ //
 ._s_apollo-data-theme-mobile-footer {
   --primary-8: #191e23;
   --primary-1: #191e23;
   --b-7: rgb(50 59 67 / 20%);
-  --bg-6: #202830;
+  --bg-6: #c2c2c2;
   --bg-5: #dcdcdc;
   --bg-2: #ffb80c;
   --bg-7: #c2c2c2;
@@ -77,4 +124,27 @@
   --btn-bg-transparent: transparent;
   --btn-label-color-1: #000000;
   --btn-label-color-2: #000000;
+}
+._s_atom-mode {
+  --primary-8: var(--primary-1);
+  // global color 
+  --b-7: var(--b-2);
+  // border 
+  --b-position-7: var(--b-position-8);
+  // border position
+  // --bg-2: var(--bg-2);
+  --bg-5: var(--bg-0);
+  --bg-6: var(--bg-0);
+  --bg-7: var(--bg-0);
+  // background 
+
+  --rgba-5: var(--rgba-0);
+  // rgba background
+  --btn-border-7: var(--btn-border-2);
+  // --btn-bg-2: var(--btn-bg-);
+  // --btn-border-2: #c2c2c2;
+  // --btn-label-color-1: #ffffff;
+  //   --btn-bg-7: #1e1e1e;
+  //   --btn-bg-2: #c2c2c2;
+  // --btn-label-color-2: #000000;
 }

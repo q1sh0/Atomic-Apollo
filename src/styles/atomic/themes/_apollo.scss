@@ -135,6 +135,8 @@ $baseBgImages: (
   "img-logoSm": var(--logo-sm),
   "img-logoSm-am": var(--logo-am-sm),
   "img-arena": var(--image-arena),
+  // "img-telegram-am": var(--logo-telegram-am),
+  // "img-telegram-com": var(--logo-telegram-com),
 );
 /*===============Shadow Sizes===============*/
 $baseShadowSize: (
@@ -580,7 +582,7 @@ $baseIconSize: (
   "lg": unquote(getNumber("numberSize--28") + "px"),
   "md": unquote(getNumber("numberSize--20") + "px"),
   "sm": unquote(getNumber("numberSize--16") + "px"),
-  "xs": unquote(getUnit("baseUnit-3") + "px"),
+  "xs": unquote(getNumber("numberSize--12") + "px"),
 );
 
 //default icons
