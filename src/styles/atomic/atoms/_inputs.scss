@@ -20,11 +20,12 @@ $hoverClass:'h-input';
     -webkit-appearance: none;
     -appearance: none;
     font-size: $value;
+    // border-style: 
     height: map_get($baseInputHeightDefault, #{$key});
     border-radius: map_get($baseInputBorderRadiusDefault, #{$key});
     color: map_get($baseInputColorDefault, #{$key});
     background-color: map_get($BaseInputBgColorDefault, #{$key});
-    border: 1px map_get($baseInputBorderColor, #{$key});
+    border: solid 1px map_get($baseInputBorderColor, #{$key});
     font-family: map_get($baseInputFont, #{$key});
     padding: map_get($baseInputPadding, #{$key});
 

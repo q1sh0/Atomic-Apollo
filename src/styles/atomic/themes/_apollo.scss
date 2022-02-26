@@ -247,7 +247,7 @@ $defaultBorderLenght: (
 $BaseButtonTypes: (
   "anti": unquote(getNumber("numberSize--1") + "px") solid rgba(var(--rgba-7), unquote(getNumber("numberSize--0--0") + "")),
   "positive": unquote(getNumber("numberSize--1") + "px") solid var(--bg-2),
-  "negative": unquote(getNumber("numberSize--1") + "px") solid var(--bg-7),
+  "negative": unquote(getNumber("numberSize--1") + "px") solid var(--btn-bg-7),
   "default": unquote(getNumber("numberSize--1") + "px") solid var(--bg-3),
   "transparent": unquote(getNumber("numberSize--1") + "px") solid
     var(--primary-transparent),
@@ -256,7 +256,7 @@ $BaseButtonTypes: (
 );
 $BaseButtonBgColor: (
   "anti": rgba(var(--rgba-7), unquote(getNumber("numberSize--0--4") + "")),
-  "positive": var(--bg-2),
+  "positive": var(--btn-bg-2),
   "negative": var(--bg-7),
   "default": var(--bg-3),
   "transparent": var(--primary-transparent),
@@ -559,7 +559,7 @@ $baseInputPadding: (
     unquote(getUnit("baseUnit-2") + "px"),
 );
 $baseInputBorderColor: (
-  "": var(--border2),
+  "": var(--b-transparent),
 );
 
 $baseInputBorder: (

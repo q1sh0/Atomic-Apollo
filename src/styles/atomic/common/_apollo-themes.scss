@@ -125,26 +125,26 @@
   --btn-label-color-1: #000000;
   --btn-label-color-2: #000000;
 }
-._s_atom-mode {
-  --primary-8: var(--primary-1);
-  // global color 
-  --b-7: var(--b-2);
-  // border 
-  --b-position-7: var(--b-position-8);
-  // border position
-  // --bg-2: var(--bg-2);
-  --bg-5: var(--bg-0);
-  --bg-6: var(--bg-0);
-  --bg-7: var(--bg-0);
-  // background 
+._s_data-horus {
+  --primary-3: #c91f20;
+  --primary-7: #01AC2D;
+  --primary-8: #ffffff;
+  --b-7: #01AC2D;
+  --b-3: #01AC2D;
+  --b-transparent: #01AC2D;
+  --b-position-7: #01AC2D;
+  --bg-3: #01AC2D;
+  --bg-4: #000000;
+  --bg-5: #000000;
+  --bg-6: #000000;
+  --bg-7: #000000;
+  --btn-bg-7:#01AC2D;
+  --rgba-5: 0, 0, 0;
+  --rgba-3:#01AC2D;
+  --btn-border-7: #01AC2D;
+      --scroll-5: #000000;
+      --scroll-7: #01AC2D;
+      --scroll-3: #01AC2D;
+        --input-4: #000000;
 
-  --rgba-5: var(--rgba-0);
-  // rgba background
-  --btn-border-7: var(--btn-border-2);
-  // --btn-bg-2: var(--btn-bg-);
-  // --btn-border-2: #c2c2c2;
-  // --btn-label-color-1: #ffffff;
-  //   --btn-bg-7: #1e1e1e;
-  //   --btn-bg-2: #c2c2c2;
-  // --btn-label-color-2: #000000;
 }

@@ -19,7 +19,7 @@ body {
 body {
     margin: 0;
     padding: 0;
-    background: #181b21;
+    background: var(--bg-4);
     user-select: none;
     -webkit-user-select: none;
     overflow-x: hidden;
