@@ -131,6 +131,7 @@
 
 
 // [[[[[ global Layouts mood. ]]]]]
+._s_apollo-data-theme-mood-0 {}
 ._s_apollo-data-theme-mood-1 {
   --primary-2: #c91f20;
   --primary-3: #c91f20;
@@ -138,7 +139,9 @@
   --primary-8: #ffffff;
   --b-7: #202020;
   --b-3: #c91f20;
+  --b-2: #c91f20;
   --b-position-7: #202020;
+  --b-position-2: #c91f20;
   --bg-2: #c91f20;
   --bg-3: #c91f20;
   --bg-4: #000000;
@@ -148,55 +151,52 @@
   --btn-bg-2: #c91f20;
   --btn-bg-7: #202020;
   --rgba-5: 0, 0, 0;
-  --rgba-3: #c91f20;
+  --rgba-2: 201, 31, 32;
+  --rgba-3: 201, 31, 32;
+  --rgba-7: 201, 31, 32;
+  --rgba-8: 201, 31, 32;
   --btn-border-7: #202020;
   --scroll-5: #000000;
   --scroll-7: #c91f20;
   --scroll-3: #c91f20;
-  --input-4: #000000;
+  --input-bg-4: #000000;
 }
-
 ._s_apollo-data-theme-mood-2 {
-  --primary-3: #c91f20;
-  --primary-7: #01AC2D;
-  --primary-8: #ffffff;
-  --b-7: #202020;
-  --b-3: #01AC2D;
-  --b-position-7: #202020;
-  --bg-3: #01AC2D;
-  --bg-4: #000000;
-  --bg-5: #000000;
-  --bg-6: #000000;
-  --bg-7: #000000;
-  --btn-bg-7: #202020;
-  --rgba-5: 0, 0, 0;
-  --rgba-3: #01AC2D;
-  --btn-border-7: #202020;
-  --scroll-5: #000000;
-  --scroll-7: #01AC2D;
-  --scroll-3: #01AC2D;
-  --input-4: #000000;
-}
+  --primary-2: #00a557;
+  --bg-2: #00a557;
+  --rgba-2: #00a557;
+  --b-2: #00a557;
+  --b-position-2: #00a557;
+  --input-bg-2: #00a557;
 
-._s_apollo-data-theme-mood-3 {
-  // --label-color-1: #131517;
-  // --primary-1: #131517;
-  // --primary-8: #e5ecf1;
-  // --bg-5: #efefef;
-  // --bg-6: #f5f5f5;
-  // --bg-7: #f5f4f4;
-  // --b-7: #272b2e;
-  // --b-position: #2f4556;
-}
-._s_apollo-data-theme-mood-4 {
-  --label-color-1: #e5ecf1;
-  --primary-1: #e5ecf1;
-  --primary-8: #e5ecf1;
-  --bg-5: #191d22;
-  --bg-6: #1a242a;
-  --bg-7: #2a3138;
-  --b-7: #272b2e;
-  --b-position: #2f4556;
+  --primary-4: #0e1214;
+  --bg-4: #0e1214;
+  --rgba-4: #0e1214;
+  --b-4: #0e1214;
+  --b-position-4: #0e1214;
+  --input-bg-4: #0e1214;
+
+  --primary-5: #111519;
+  --bg-5: #111519;
+  --rgba-5: #111519;
+  --b-5: #111519;
+  --b-position-5: #111519;
+  --input-bg-5: #111519;
+
+  --primary-6: #151a1f;
+  --bg-6: #151a1f;
+  --rgba-6: #151a1f;
+  --b-6: #151a1f;
+  --b-position-6: #151a1f;
+  --input-bg-6: #151a1f;
+
+  --primary-7: #1b2127;
+  --bg-7: #1b2127;
+  --rgba-7: #1b2127;
+  --b-7: #1b2127;
+  --b-position-7: #1b2127;
+  --input-bg-7: #1b2127;
+
 }
 
 // https: //itravelpoetry.com/wp-content/uploads/2022/02/img_8284.jpg
