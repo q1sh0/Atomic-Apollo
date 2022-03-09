@@ -132,6 +132,7 @@
 
 // [[[[[ global Layouts mood. ]]]]]
 ._s_apollo-data-theme-mood-0 {}
+
 ._s_apollo-data-theme-mood-1 {
   --primary-2: #c91f20;
   --primary-3: #c91f20;
@@ -161,13 +162,18 @@
   --scroll-3: #c91f20;
   --input-bg-4: #000000;
 }
+
 ._s_apollo-data-theme-mood-2 {
+  
   --primary-2: #00a557;
   --bg-2: #00a557;
   --rgba-2: #00a557;
   --b-2: #00a557;
   --b-position-2: #00a557;
   --input-bg-2: #00a557;
+  --btn-bg-2: #00a557;
+  --btn-bg-rgba-2: 0, 165, 87;
+  --btn-border-2: #00a557;
 
   --primary-4: #0e1214;
   --bg-4: #0e1214;
@@ -196,7 +202,23 @@
   --b-7: #1b2127;
   --b-position-7: #1b2127;
   --input-bg-7: #1b2127;
+  --btn-bg-7: #1b2127;
+  --btn-bg-rgba-7: 27, 33, 39;
+  --btn-border-7: #1b2127;
+
 
 }
 
 // https: //itravelpoetry.com/wp-content/uploads/2022/02/img_8284.jpg
+
+
+// :root {
+//   --btn-bg-rgba-7:var(--rgba-7)
+//   // 
+//   --btn-border-2:var(--b-2);
+//   --btn-border-3:var(--b-3);
+//   --btn-border-7:var(--b-7);
+//   --btn-border-transparent:var(--b-transparent);
+// // 
+//   --btn-bg-rgba-7:var(--rgba-7);
+// }
