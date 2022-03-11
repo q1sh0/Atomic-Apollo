@@ -163,62 +163,61 @@
   --input-bg-4: #000000;
 }
 
-._s_apollo-data-theme-mood-2 {
-  
-  --primary-2: #00a557;
-  --bg-2: #00a557;
-  --rgba-2: #00a557;
-  --b-2: #00a557;
-  --b-position-2: #00a557;
-  --input-bg-2: #00a557;
-  --btn-bg-2: #00a557;
-  --btn-bg-rgba-2: 0, 165, 87;
-  --btn-border-2: #00a557;
+._s_apollo-data-theme-1 {
 
-  --primary-4: #0e1214;
-  --bg-4: #0e1214;
-  --rgba-4: #0e1214;
-  --b-4: #0e1214;
-  --b-position-4: #0e1214;
-  --input-bg-4: #0e1214;
+  // THEME 1 guidline 
+  --theme-1--2: #00a557;
+  --theme-1--4: #0e1214;
+  --theme-1--5: #111519;
+  --theme-1--6: #151a1f;
+  --theme-1--7: #1b2127;
 
-  --primary-5: #111519;
-  --bg-5: #111519;
-  --rgba-5: #111519;
-  --b-5: #111519;
-  --b-position-5: #111519;
-  --input-bg-5: #111519;
+  --theme-1--rgba-2: 0, 165, 87;
+  --theme-1--rgba-4: 14, 18, 20;
+  --theme-1--rgba-5: 17, 21, 25;
+  --theme-1--rgba-6: 21, 26, 31;
+  --theme-1--rgba-7: 27, 33, 39;
+  // THEME 1 guidline /.
 
-  --primary-6: #151a1f;
-  --bg-6: #151a1f;
-  --rgba-6: #151a1f;
-  --b-6: #151a1f;
-  --b-position-6: #151a1f;
-  --input-bg-6: #151a1f;
+  // -->
+  // ----> theme 1 items
+  --primary-2: var(--theme-1--2);
+  --primary-4: var(--theme-1--4);
+  --primary-5: var(--theme-1--5);
+  --primary-6: var(--theme-1--6);
+  --primary-7: var(--theme-1--7);
 
-  --primary-7: #1b2127;
-  --bg-7: #1b2127;
-  --rgba-7: #1b2127;
-  --b-7: #1b2127;
-  --b-position-7: #1b2127;
-  --input-bg-7: #1b2127;
-  --btn-bg-7: #1b2127;
-  --btn-bg-rgba-7: 27, 33, 39;
-  --btn-border-7: #1b2127;
+  --bg-2: var(--theme-1--2);
+  --bg-4: var(--theme-1--4);
+  --bg-5: var(--theme-1--5);
+  --bg-6: var(--theme-1--6);
+  --bg-7: var(--theme-1--7);
 
+  --b-4: var(--theme-1--4);
+  --b-5: var(--theme-1--5);
 
+  --b-position-2: var(--theme-1--2);
+  --b-position-4: var(--theme-1--4);
+  --b-position-5: var(--theme-1--5);
+  --b-position-6: var(--theme-1--6);
+  --b-position-7: var(--theme-1--7);
+
+  --input-bg-2: var(--theme-1--2);
+  --input-bg-4: var(--theme-1--4);
+  --input-bg-5: var(--theme-1--5);
+  --input-bg-6: var(--theme-1--6);
+  --input-bg-7: var(--theme-1--7);
+
+  // MOLECULE button:
+  --btn-bg-2: var(--theme-1--2);
+  --btn-bg-7: var(--theme-1--7);
+
+  --btn-bg-rgba-2: var(--theme-1--rgba-2);
+  --btn-bg-rgba-7: var(--theme-1--rgba-7);
+  --btn-bg-rgba-8: var(--theme-1--rgba-8);
+
+  --btn-border-2: var(--theme-1--2);
+  --btn-border-7: var(--theme-1--7);
 }
 
 // https: //itravelpoetry.com/wp-content/uploads/2022/02/img_8284.jpg
-
-
-// :root {
-//   --btn-bg-rgba-7:var(--rgba-7)
-//   // 
-//   --btn-border-2:var(--b-2);
-//   --btn-border-3:var(--b-3);
-//   --btn-border-7:var(--b-7);
-//   --btn-border-transparent:var(--b-transparent);
-// // 
-//   --btn-bg-rgba-7:var(--rgba-7);
-// }
