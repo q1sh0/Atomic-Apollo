@@ -1,6 +1,7 @@
 /*common*/
  @import './common/common';
 /*common*/
+
 /*settings*/
 @import './settings/settings';
 /*settings*/
@@ -9,10 +10,10 @@
 @import './default/default';
 /*default*/
 
-/*themes*/
-@import './themes/_apollo';
-@import './themes/_apollo-btn';
-/*themes*/
+/*config*/
+@import './guide-config/_apollo';
+@import './guide-config/_apollo-btn';
+/*config*/
 
 /*atoms*/
 @import './atoms/atoms';

@@ -1,0 +1,376 @@
+._s_btn:hover {
+    background-color: rgba(var(--btn-bg-rgba-3), .7)
+}
+
+._s_btn:focus,
+._s_btn:hover {
+    border-color: rgba(var(--btn-bg-rgba-3), .7)
+}
+
+._s_btn:focus {
+    background-color: rgba(var(--btn-bg-rgba-3), .5)
+}
+
+._s_btn-anti:hover {
+    border-color: var(--btn-bg-7);
+    background-color: var(--btn-bg-7)
+}
+
+._s_btn-anti:focus {
+    border-color: rgba(var(--btn-bg-rgba-8), .5);
+    background-color: var(--btn-bg-7)
+}
+
+._s_btn-anti:focus ._s_label,
+._s_btn-anti:hover ._s_label {
+    color: var(--btn-label-1)
+}
+
+._s_btn-anti:focus ._s_icon,
+._s_btn-anti:hover ._s_icon {
+    color: var(--btn-icon-1)
+}
+
+._s_btn-anti ._s_label {
+    color: var(--btn-label-1)
+}
+
+._s_btn-anti ._s_icon {
+    color: var(--btn-icon-1)
+}
+
+._s_btn-positive:hover {
+    border-color: rgba(var(--btn-bg-rgba-2), .7);
+    background-color: rgba(var(--btn-bg-rgba-2), .7)
+}
+
+._s_btn-positive:focus {
+    border-color: var(--btn-border-2);
+    background-color: rgba(var(--btn-bg-rgba-2), .5)
+}
+
+._s_btn-positive:focus ._s_label,
+._s_btn-positive:hover ._s_label {
+    color: var(--btn-label-1)
+}
+
+._s_btn-positive:focus ._s_icon,
+._s_btn-positive:hover ._s_icon {
+    color: var(--btn-icon-1)
+}
+
+._s_btn-positive ._s_label {
+    color: var(--btn-label-1)
+}
+
+._s_btn-positive ._s_icon {
+    color: var(--btn-icon-1)
+}
+
+._s_btn-negative:hover {
+    border-color: rgba(var(--btn-bg-rgba-7), .7);
+    background-color: rgba(var(--btn-bg-rgba-7), .7)
+}
+
+._s_btn-negative:focus {
+    border-color: var(--btn-border-7);
+    background-color: rgba(var(--btn-bg-rgba-7), .5)
+}
+
+._s_btn-negative:focus ._s_label,
+._s_btn-negative:hover ._s_label {
+    color: var(--btn-label-1)
+}
+
+._s_btn-negative:focus ._s_icon,
+._s_btn-negative:hover ._s_icon {
+    color: var(--btn-icon-1)
+}
+
+._s_btn-negative ._s_label {
+    color: var(--btn-label-1)
+}
+
+._s_btn-negative ._s_icon {
+    color: var(--btn-icon-1)
+}
+
+._s_btn-default:hover {
+    border-color: rgba(var(--btn-bg-rgba-3), .7);
+    background-color: rgba(var(--btn-bg-rgba-3), .7)
+}
+
+._s_btn-default:focus {
+    border-color: var(--btn-border-3);
+    background-color: rgba(var(--btn-bg-rgba-3), .5)
+}
+
+._s_btn-default:focus ._s_label,
+._s_btn-default:hover ._s_label {
+    color: var(--btn-label-1)
+}
+
+._s_btn-default:focus ._s_icon,
+._s_btn-default:hover ._s_icon {
+    color: var(--btn-icon-1)
+}
+
+._s_btn-default ._s_label {
+    color: var(--btn-label-1)
+}
+
+._s_btn-default ._s_icon {
+    color: var(--btn-icon-1)
+}
+
+
+._s_btn-transparent:hover {
+    border-color: var(--btn-bg-rgba-transparent);
+    background-color: var(--btn-bg-rgba-transparent)
+}
+
+._s_btn-transparent:focus {
+    border-color: rgba(var(--btn-bg-rgba-8), .7);
+    background-color: var(--btn-bg-transparent)
+}
+
+._s_btn-transparent:focus ._s_label,
+._s_btn-transparent:hover ._s_label {
+    color: var(--btn-label-1)
+}
+
+._s_btn-transparent:focus ._s_icon,
+._s_btn-transparent:hover ._s_icon {
+    color: var(--btn-icon-1)
+}
+
+._s_btn-transparent ._s_label {
+    color: var(--btn-label-1)
+}
+
+._s_btn-transparent ._s_icon {
+    color: var(--btn-icon-1)
+}
+
+._s_btn-bordered-negative:hover {
+    border-color: rgba(var(--btn-bg-rgba-7), .5);
+    background-color: var(--btn-bg-rgba-transparent)
+}
+
+._s_btn-bordered-negative:focus {
+    border-color: rgba(var(--btn-bg-rgba-7), .7);
+    background-color: var(--btn-bg-transparent)
+}
+
+._s_btn-bordered-negative:focus ._s_label {
+    color: var(--btn-label-1)
+}
+
+._s_btn-bordered-negative:focus ._s_icon,
+._s_btn-bordered-negative:hover ._s_icon {
+    color: var(--btn-icon-1)
+}
+
+._s_btn-bordered-negative ._s_label {
+    color: var(--btn-label-1)
+}
+
+._s_btn-bordered-negative ._s_icon {
+    color: var(--btn-icon-1)
+}
+
+._s_btn-disabled-positive ._s_icon,
+._s_btn-disabled-positive ._s_label {
+    color: rgba(var(--btn-icon-rgba-1), .5)
+}
+
+._s_btn-disabled-positive:hover {
+    cursor: default !important;
+    border-color: rgba(var(--btn-bg-rgba-2), .5);
+    background-color: rgba(var(--btn-bg-rgba-2), .5)
+}
+
+._s_btn-disabled-positive:hover ._s_label {
+    color: rgba(var(--btn-icon-rgba-1), .5)
+}
+
+._s_btn-disabled-positive:hover ._s_icon {
+    color: var(--btn-icon-1)
+}
+
+._s_btn-disabled-positive:focus {
+    cursor: default !important;
+    border-color: rgba(var(--btn-bg-rgba-2), .5);
+    background-color: rgba(var(--btn-bg-rgba-2), .5)
+}
+
+._s_btn-disabled-positive:focus ._s_label {
+    color: rgba(var(--btn-icon-rgba-1), .5)
+}
+
+._s_btn-disabled-positive:focus ._s_icon {
+    color: var(--btn-icon-1)
+}
+
+._s_btn-disabled-negative ._s_icon,
+._s_btn-disabled-negative ._s_label {
+    color: rgba(var(--btn-icon-rgba-1), .5)
+}
+
+._s_btn-disabled-negative:hover {
+    cursor: default !important;
+    border-color: rgba(var(--btn-bg-rgba-7), .5);
+    background-color: rgba(var(--btn-bg-rgba-7), .5)
+}
+
+._s_btn-disabled-negative:hover ._s_label {
+    color: rgba(var(--btn-icon-rgba-1), .5)
+}
+
+._s_btn-disabled-negative:hover ._s_icon {
+    color: var(--btn-icon-1)
+}
+
+._s_btn-disabled-negative:focus {
+    cursor: default !important;
+    border-color: rgba(var(--btn-bg-rgba-7), .5);
+    background-color: rgba(var(--btn-bg-rgba-7), .5)
+}
+
+._s_btn-disabled-negative:focus ._s_label {
+    color: rgba(var(--btn-icon-rgba-1), .5)
+}
+
+._s_btn-disabled-negative:focus ._s_icon {
+    color: var(--btn-icon-1)
+}
+
+._s_btn-disabled-default ._s_icon,
+._s_btn-disabled-default ._s_label {
+    color: rgba(var(--btn-icon-rgba-1), .5)
+}
+
+._s_btn-disabled-default:hover {
+    cursor: default !important;
+    border-color: rgba(var(--btn-bg-rgba-3), .5);
+    background-color: rgba(var(--btn-bg-rgba-3), .5)
+}
+
+._s_btn-disabled-default:hover ._s_label {
+    color: rgba(var(--btn-icon-rgba-1), .5)
+}
+
+._s_btn-disabled-default:hover ._s_icon {
+    color: var(--btn-icon-1)
+}
+
+._s_btn-disabled-default:focus {
+    cursor: default !important;
+    border-color: rgba(var(--btn-bg-rgba-3), .5);
+    background-color: rgba(var(--btn-bg-rgba-3), .5)
+}
+
+._s_btn-disabled-default:focus ._s_label {
+    color: rgba(var(--btn-icon-rgba-1), .5)
+}
+
+._s_btn-disabled-default:focus ._s_icon {
+    color: var(--btn-icon-1)
+}
+
+._s_btn-disabled-transparent ._s_icon,
+._s_btn-disabled-transparent ._s_label {
+    color: rgba(var(--btn-icon-rgba-1), .5)
+}
+
+._s_btn-disabled-transparent:hover {
+    cursor: default !important;
+    border-color: var(--btn-bg-transparent);
+    background-color: var(--btn-bg-transparent)
+}
+
+._s_btn-disabled-transparent:hover ._s_label {
+    color: rgba(var(--btn-icon-rgba-1), .5)
+}
+
+._s_btn-disabled-transparent:hover ._s_icon {
+    color: var(--btn-icon-1)
+}
+
+._s_btn-disabled-transparent:focus {
+    cursor: default !important;
+    border-color: var(--btn-bg-transparent);
+    background-color: var(--btn-bg-transparent)
+}
+
+._s_btn-disabled-transparent:focus ._s_label {
+    color: rgba(var(--btn-icon-rgba-1), .5)
+}
+
+._s_btn-disabled-transparent:focus ._s_icon {
+    color: var(--btn-icon-1)
+}
+
+._s_btn-disabled-bordered-negative ._s_icon,
+._s_btn-disabled-bordered-negative ._s_label {
+    color: rgba(var(--btn-icon-rgba-1), .5)
+}
+
+._s_btn-disabled-bordered-negative:hover {
+    cursor: default !important;
+    border-color: rgba(var(--btn-bg-rgba-7), .5);
+    background-color: var(--btn-bg-transparent)
+}
+
+._s_btn-disabled-bordered-negative:hover ._s_label {
+    color: rgba(var(--btn-icon-rgba-1), .5)
+}
+
+._s_btn-disabled-bordered-negative:hover ._s_icon {
+    color: var(--btn-icon-1)
+}
+
+._s_btn-disabled-bordered-negative:focus {
+    cursor: default !important;
+    border-color: rgba(var(--btn-bg-rgba-7), .5);
+    background-color: var(--btn-bg-transparent)
+}
+
+._s_btn-disabled-bordered-negative:focus ._s_label {
+    color: rgba(var(--btn-icon-rgba-1), .5)
+}
+
+._s_btn-disabled-bordered-negative:focus ._s_icon {
+    color: var(--btn-icon-1)
+}
+
+._s_btn-active-anti ._s_icon,
+._s_btn-active-anti ._s_label {
+    color: var(--btn-label-1)
+}
+
+._s_btn-active-anti:hover {
+    border-color: rgba(var(--btn-bg-rgba-8), .5);
+    background-color: var(--btn-bg-7)
+}
+
+._s_btn-active-anti:hover ._s_label {
+    color: var(--btn-label-1)
+}
+
+._s_btn-active-anti:hover ._s_icon {
+    color: var(--btn-icon-1)
+}
+
+._s_btn-active-anti:focus {
+    border-color: rgba(var(--btn-bg-rgba-8), .5);
+    background-color: var(--btn-bg-7)
+}
+
+._s_btn-active-anti:focus ._s_label {
+    color: var(--btn-label-1)
+}
+
+._s_btn-active-anti:focus ._s_icon {
+    color: var(--btn-icon-1)
+}
