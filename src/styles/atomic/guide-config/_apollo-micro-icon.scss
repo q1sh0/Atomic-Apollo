@@ -1,0 +1,37 @@
+/*=============== Icons===============*/
+$baseIconGrid: (
+  "xl": unquote(getUnit("baseUnit-10") + "px"),
+  "lg": unquote(getUnit("baseUnit-8") + "px"),
+  "md": unquote(getUnit("baseUnit-6") + "px"),
+  "sm": unquote(getUnit("baseUnit-5") + "px"),
+  "xs": unquote(getUnit("baseUnit-4") + "px"),
+);
+$baseIconSize: (
+  "xl": unquote(getNumber("numberSize--44") + "px"),
+  "lg": unquote(getNumber("numberSize--28") + "px"),
+  "md": unquote(getNumber("numberSize--20") + "px"),
+  "sm": unquote(getNumber("numberSize--16") + "px"),
+  "xs": unquote(getNumber("numberSize--12") + "px"),
+);
+
+//default icons
+$baseIcontFontSize: (
+  "": unquote(getUnit("baseUnit-4") + "px"),
+);
+$baseIcontHeightWidthGrid: (
+  "": unquote(getUnit("baseUnit-5") + "px"),
+);
+$baseIcontColor: var(--icon-color-1);
+$baseIcontBgColor: (
+  "": getColor("transparent"),
+);
+$baseIcontMargin: (
+  "": unquote(getUnit("baseUnit-0") + "px")
+    unquote(getUnit("baseUnit-2") + "px") unquote(getUnit("baseUnit-0") + "px")
+    unquote(getUnit("baseUnit-2") + "px"),
+);
+$baseIconPadding: (
+  "": unquote(getUnit("baseUnit-0") + "px")
+    unquote(getUnit("baseUnit-0") + "px") unquote(getUnit("baseUnit-0") + "px")
+    unquote(getUnit("baseUnit-0") + "px"),
+);

@@ -1,25 +1,31 @@
+// here are global theme managment new method ->
+
 // global data 1 
 ._s_apollo-data-1 {
     // colors
     --primary-2: #00a557;
+    --primary-3: #FF453A;
     --primary-4: #0e1214;
     --primary-5: #111519;
     --primary-6: #151a1f;
     --primary-7: #1b2127;
     // backgrounds
     --bg-2: #00a557;
+    --bg-3: #FF453A;
     --bg-4: #0e1214;
     --bg-5: #111519;
     --bg-6: #151a1f;
     --bg-7: #1b2127;
     // borders
     --b-2: #00a557;
+    --b-3: #FF453A;
     --b-4: #0e1214;
     --b-5: #111519;
     --b-6: #151a1f;
     --b-7: #1b2127;
     // border-positions
     --b-position-2: #00a557;
+    --b-position-3: #FF453A;
     --b-position-4: #0e1214;
     --b-position-5: #111519;
     --b-position-6: #151a1f;
@@ -27,18 +33,24 @@
     // micro elems ->
     //--> input backgrounds
     --input-bg-2: #00a557;
+    --input-bg-3: #FF453A;
     --input-bg-4: #0e1214;
     --input-bg-5: #111519;
     --input-bg-6: #151a1f;
     --input-bg-7: #1b2127;
     //--> button backgrounds 
     --btn-bg-2: #00a557;
+    --btn-bg-3: #FF453A;
     --btn-bg-7: #1b2127;
     //--> button background rgba
     --btn-bg-rgba-2: 0, 165, 87;
+    --btn-bg-rgba-3: 255, 69, 58;
     --btn-bg-rgba-7: 27, 33, 39;
     //--> button borders
     --btn-border-2: #00a557;
+    --btn-border-3: #FF453A;
     --btn-border-7: #1b2127;
+
 }
+
 // https: //itravelpoetry.com/wp-content/uploads/2022/02/img_8284.jpg

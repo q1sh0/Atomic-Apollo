@@ -1,0 +1,83 @@
+
+/*===============Labels===============*/
+$lineHeight: (
+  "28": unquote(getNumber("numberSize--28") + "px"),
+);
+$baseLabelGrid: (
+  "lg": unquote(getUnit("baseUnit-7") + "px"),
+  "md": unquote(getUnit("baseUnit-5") + "px"),
+  "md-regular": unquote(getUnit("baseUnit-5") + "px"),
+  "sm": unquote(getUnit("baseUnit-4") + "px"),
+  "sm-regular": unquote(getUnit("baseUnit-4") + "px"),
+  "xs": unquote(getUnit("baseUnit-4") + "px"),
+);
+$baseLabelSizes: (
+  "lg": unquote(getNumber("numberSize--22") + "px"),
+  "md": unquote(getNumber("numberSize--15") + "px"),
+  "md-regular": unquote(getNumber("numberSize--15") + "px"),
+  "sm": unquote(getNumber("numberSize--12") + "px"),
+  "sm-regular": unquote(getNumber("numberSize--12") + "px"),
+  "xs": unquote(getNumber("numberSize--11") + "px"),
+);
+$baseLabelFontWeight: (
+  "lg": bold,
+  "md": bold,
+  "md-regular": normal,
+  "sm": unquote(getNumber("numberSize--500") + ""),
+  "sm-regular": normal,
+  "xs": unquote(getNumber("numberSize--500") + ""),
+);
+$baseLabelLineHeight: (
+  "lg": unquote(getUnit("baseUnit-7") + "px"),
+  "md": unquote(getUnit("baseUnit-5") + "px"),
+  "md-regular": unquote(getUnit("baseUnit-5") + "px"),
+  "sm": unquote(getUnit("baseUnit-4") + "px"),
+  "sm-regular": unquote(getUnit("baseUnit-4") + "px"),
+  "xs": unquote(getUnit("baseUnit-4") + "px"),
+);
+$featureSetting: (
+  "lg": "case" on,
+  "md": "case" on,
+  "md-regular": initial,
+  "sm": initial,
+  "sm-regular": initial,
+  "xs":  initial,
+);
+$baseLabelFontFamily: (
+  "lg": "abmont_probold",
+  "md": "abmont_prodemibold",
+  "md-regular": "abmont_proregular",
+  "sm": "abmont_prodemibold",
+  "sm-regular": "abmont_proregular",
+  "xs": "abmont_prodemibold",
+);
+//default labels
+$baseLabelFontSize: (
+  "": unquote(getNumber("numberSize--12") + "px"),
+);
+$baseLabelHeightWidthGrid: (
+  "": unquote(getUnit("baseUnit-4") + "px"),
+);
+$baseLabelBorderRadius: (
+  "": unquote(getUnit("baseUnit-1") + "px"),
+);
+$baseLabelColor: var(--label-color-1);
+$baseLabelBgColor: (
+  "": getColor("transparent"),
+);
+$baseLabelFont: (
+  "": "abmont_prodemibold",
+);
+$baseLabelFonDefaultWeight: (
+  "": bold,
+);
+$baseLabeltMargin: (
+  "": unquote(getUnit("baseUnit-0") + "px")
+    unquote(getUnit("baseUnit-0") + "px") unquote(getUnit("baseUnit-0") + "px")
+    unquote(getUnit("baseUnit-0") + "px"),
+);
+$baseLabelpadding: (
+  "": unquote(getUnit("baseUnit-0") + "px")
+    unquote(getUnit("baseUnit-0") + "px") unquote(getUnit("baseUnit-0") + "px")
+    unquote(getUnit("baseUnit-0") + "px"),
+);

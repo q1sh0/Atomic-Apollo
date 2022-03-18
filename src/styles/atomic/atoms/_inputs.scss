@@ -56,10 +56,3 @@ $hoverClass:'h-input';
     }
   }
 }
-
-// autofill
-input:-internal-autofill-selected {
-  background-color: rgb(232, 240, 254);
-  background-image: none;
-  color: -internal-light-dark-color(black, transparent);
-}

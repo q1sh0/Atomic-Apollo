@@ -1,0 +1,35 @@
+/*===============Input Types===============*/
+$BaseInputTypes: ("negative": unquote(getNumber("numberSize--1") + "px") solid var(--primary-7),
+  "positive": unquote(getNumber("numberSize--1") + "px") solid var(--primary-2),
+  "transparent": unquote(getNumber("numberSize--1") + "px") solid var(--input-transparent),
+);
+$BaseInputBgColor: ("negative": var(--primary-7),
+  "positive": var(--primary-2),
+  "transparent": var(--input-transparent),
+);
+$BaseInputSize: ("md": unquote(getUnit("baseUnit-12") + "px"),
+  "sm": unquote(getUnit("baseUnit-10") + "px"),
+  "xs": unquote(getUnit("baseUnit-8") + "px"));
+$baseInputFontSize: ("md": unquote(getNumber("numberSize--15") + "px"),
+  "sm": unquote(getNumber("numberSize--13") + "px"),
+  "xs": unquote(getNumber("numberSize--11") + "px"));
+//default input
+$baseInputColorDefault: ("": var(--primary-1),
+);
+$baseInputBorderRadiusDefault: ("": unquote(getUnit("baseUnit-1") + "px"),
+);
+$baseInputFont: ("": "abmont_proregular",
+);
+$baseInputHeightDefault: ("": unquote(getUnit("baseUnit-12") + "px"),
+);
+$baeInputFontSizeDefault: ("": unquote(getNumber("numberSize--15") + "px"));
+$baseInputMargin: ("": unquote(getUnit("baseUnit-0") + "px") unquote(getUnit("baseUnit-0") + "px") unquote(getUnit("baseUnit-0") + "px") unquote(getUnit("baseUnit-0") + "px"),
+);
+$baseInputPadding: ("": unquote(getUnit("baseUnit-0") + "px") unquote(getUnit("baseUnit-2") + "px") unquote(getUnit("baseUnit-0") + "px") unquote(getUnit("baseUnit-2") + "px"),
+);
+$baseInputBorderColor: ("": var(--border2),
+);
+$baseInputBorder: ("": unquote(getNumber("numberSize--1") + "px"),
+);
+$BaseInputBgColorDefault: ("": var(--input-4),
+);
