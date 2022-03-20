@@ -172,6 +172,11 @@ input:-webkit-autofill:active {
     -webkit-transition-delay: 99999s;
     animation: autofill 0s forwards;
 }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
 //for enter-with-sms -- auth
 ._s_label-xxs {
