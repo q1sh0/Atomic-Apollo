@@ -1,22 +1,33 @@
+// Header betfair = 
+//-> hedaer.
+//-> footer.
+//--->> header notifications.
+//--->> header layer.
+//--->> header layer verification button.
+
 ._s_apollo-data-theme-header {
-  --primary-8: #191e23;
   --primary-1: #191e23;
+  --primary-8: #191e23;
   --rgba-5: 255, 255, 255;
   --b-7: #ffffff;
-  --b-position-7: rgba(30, 30, 30, .05);
-  --b-position-6: rgba(30, 30, 30, .05);
+  --b-3: #c91f20;
+  --b-position-3: #c91f20;
+  --b-position-7: #f4f4f4;
+  --b-position-6: #f4f4f4;
   --bg-3: #1e1e1e;
   --bg-4: #ffffff;
   --bg-5: #ffb80c;
   --bg-7: #dd9c06;
   --input-4: #ffffff;
   --input-transparent: #ffffff;
-  --btn-bg-7: #1e1e1e;
-  --btn-bg-2: #c2c2c2;
-  --btn-border-7: #323b43;
-  --btn-border-2: #c2c2c2;
-  --btn-label-color-1: #ffffff;
-  --btn-label-color-2: #000000;
+  --btn-bg-2: #01AC2D;
+  --btn-bg-7: #dd9c06;
+  --btn-bg-rgba-2: 1, 172, 45;
+  --btn-bg-rgba-7: 50, 59, 67;
+  --btn-border-2: #01AC2D;
+  --btn-border-7: #dd9c06;
+  --btn-label-1: #191e23;
+  // LOGOS
   --logo: url('https://newstatic.adjarabet.com/static/atomic/images/logos/logo-black.svg');
   --logo-am: url('https://newstatic.adjarabet.com/static/atomic/images/logos/logo-am-black.svg');
   --logo-sm: url('https://newstatic.adjarabet.com/static/atomic/images/logos/mini-logo-black.svg');
@@ -33,17 +44,19 @@
   }
 
   ._s_apollo-data-theme-header--layer {
-    --bg-5: #FFFFFF;
     --primary-5: #FFFFFF;
+    --primary-8: #7F7F7F;
+    --bg-5: #FFFFFF;
     --bg-6: #FFFFFF;
     --label-color-1: #1e1e1e;
-    --primary-8: #7F7F7F;
     --b-position-7: #DCDCDC;
   }
 
   ._s_apollo-data-theme-header--btn {
-    --bg-3: #c91f20;
-    --label-color-1: #ffffff;
+    --btn-bg-3: #c91f20;
+    --btn-bg-rgba-3: 201, 31, 32;
+    --btn-border-3: #c91f20;
+    --btn-label-1: #ffffff;
   }
 
   input:-webkit-autofill,
@@ -56,10 +69,54 @@
   }
 }
 
+._s_apollo-data-theme-footer {
+  --primary-8: #191e23;
+  --primary-1: #191e23;
+  --b-7: rgb(50 59 67 / 20%);
+  --b-position-7: rgb(50 59 67 / 20%);
+  --b-position-6: rgba(30, 30, 30, .05);
+  --bg-7: #323b43;
+  --bg-6: #dcdcdc;
+  --bg-5: #c2c2c2;
+  --bg-2: #ffb80c;
+  --btn-bg-rgba-7: 50, 59, 67;
+  --scroll-5: #dcdcdc;
+  --scroll-3: #c2c2c2;
+  --btn-label-1: #191e23;
+}
+
+// <----- end.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Mobile betfair = 
+//-> hedaer.
+//-> footer.
+//--->> header user.
+//--->> header layer.
+//--->> header layer balance.
+//--->> header layer switch.
 ._s_apollo-data-theme-mobile-header {
   --icon-color-1: #1e1e1e;
   --label-color-1: #1e1e1e;
   --bg-4: #ffb80c;
+  --bg-3: #c91f20;
+  --primary-3: #c91f20;
+  --rgba-3: 201, 31, 32;
 
   ._s_apollo-data-theme-header--user {
     --primary-8: #1e1e1e;
@@ -67,42 +124,33 @@
   }
 
   ._s_apollo-data-theme-header--layer {
-    --bg-5: #FFFFFF;
-    --primary-5: #FFFFFF;
-    --bg-6: #FFFFFF;
-    --label-color-1: #1e1e1e;
-    --primary-8: #7F7F7F;
-    --b-position-7: #DCDCDC;
     --primary-1: #DCDCDC;
+    --bg-5: #FFFFFF;
+    --bg-6: #FFFFFF;
+    --primary-5: #FFFFFF;
+    --primary-8: #7F7F7F;
+    --label-color-1: #1e1e1e;
+    --b-position-7: #DCDCDC;
   }
 
   ._s_apollo-data-theme-balance--layer {
     --primary-1: #1E1E1E;
     --primary-8: #626262;
     --bg-2: #FFB80C;
+    --btn-bg-2: #FFB80C;
+    --btn-bg-rgba-2: 255, 184, 12;
+    --btn-border-2: #FFB80C;
+    --btn-label-1: #1E1E1E;
+
   }
 
   ._s_apollo-data-theme-switch--layer {
-
     --bg-4: #CCCCCC;
     --bg-6: #F0F1F5;
     --primary-6: #626262;
     --primary-8: #626262;
     --primary-2: #626262;
   }
-}
-
-._s_apollo-data-theme-footer {
-  --primary-8: #191e23;
-  --primary-1: #191e23;
-  --b-7: rgb(50 59 67 / 20%);
-  --b-position-7: rgb(50 59 67 / 20%);
-  --b-position-6: rgba(30, 30, 30, .05);
-  --bg-6: #dcdcdc;
-  --bg-5: #c2c2c2;
-  --bg-2: #ffb80c;
-  --scroll-5: #dcdcdc;
-  --scroll-3: #c2c2c2;
 }
 
 ._s_apollo-data-theme-mobile-footer {
@@ -114,8 +162,11 @@
   --bg-2: #ffb80c;
   --bg-7: #c2c2c2;
   --btn-bg-7: #c2c2c2;
+  --btn-bg-rgba-7: 194, 194, 194;
   --btn-border-7: #c2c2c2;
   --btn-bg-transparent: transparent;
-  --btn-label-color-1: #000000;
-  --btn-label-color-2: #000000;
+  --btn-label-1: #000000;
+  --btn-icon-1: #000000;
 }
+
+// <----- end.
